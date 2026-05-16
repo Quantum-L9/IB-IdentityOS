@@ -1,0 +1,7 @@
+{
+  "name": "IdentityOS",
+  "repo_root": "identityos",
+  "cli": "bootmyagent",
+  "version": "3.1",
+  "phase_1_requires_custom_extensions": false
+}

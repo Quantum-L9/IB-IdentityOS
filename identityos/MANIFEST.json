@@ -1,0 +1,176 @@
+{
+  "pack": "identityos_developer_pack_v3_1",
+  "generated_at": "2026-05-16T17:24:19.557463Z",
+  "validation": {
+    "canonical_repo_root": "identityos/",
+    "cli_surface": "bootmyagent",
+    "adr_007_deduped": true,
+    "custom_extensions_phase_gated": true,
+    "phase_1_requires_aiid_or_kern": false,
+    "cogboot_public_drift_normalized": true,
+    "no_placeholders_policy_documented": true,
+    "remaining_blockers": []
+  },
+  "files": [
+    {
+      "path": "identityos/.well-known/identityos.json",
+      "size": 147,
+      "sha256": "3bbf1a7389a48a7f783ebe8b29b7207b06c74beced30b12f99adb6f6e4cd89d4"
+    },
+    {
+      "path": "identityos/ADR_INDEX.md",
+      "size": 1971,
+      "sha256": "ee4ac124f114226cc0bf0ddc886afa41efc4473e73dac248a3fe6ea038915f3f"
+    },
+    {
+      "path": "identityos/AGENTS.md",
+      "size": 1811,
+      "sha256": "849153b1385370977622896c1b597ae3237c623783804437719985c73b146d8d"
+    },
+    {
+      "path": "identityos/CHANGELOG.md",
+      "size": 154,
+      "sha256": "efd6642224ea3566aa3b7941a8634465db83ef8985677dc1881b004828e3ab69"
+    },
+    {
+      "path": "identityos/CODE_OF_CONDUCT.md",
+      "size": 66,
+      "sha256": "abf3981a33e3ebf2145e6f8989182725dfd8cb121ab8bb01c9aa7cc5603d1341"
+    },
+    {
+      "path": "identityos/CONTRIBUTING.md",
+      "size": 79,
+      "sha256": "87000e5f236260753dca667c3b4c2446f080100c371d046d844dca58edacce00"
+    },
+    {
+      "path": "identityos/FILE_TREE.md",
+      "size": 872,
+      "sha256": "82ea2ce5765e2616148768290f0cf9ad07854390c48e13a6d766dd5fd9814071"
+    },
+    {
+      "path": "identityos/LICENSE",
+      "size": 22,
+      "sha256": "d229462d8a1199d7dcde2e11f154e34a0638b4c135bc32cf60d08ff6e275af25"
+    },
+    {
+      "path": "identityos/PHASE_1_BUILD_SCOPE.md",
+      "size": 1323,
+      "sha256": "7a17f977f368fc2dbcd333548421197d6d2ea2651ecf5be27a81ae6f2effe2b2"
+    },
+    {
+      "path": "identityos/README.md",
+      "size": 1728,
+      "sha256": "ae786497212c14cf1178bbba1b3275f58e50edecc27310374c9cfeb663b87a0f"
+    },
+    {
+      "path": "identityos/REPO_SPEC.md",
+      "size": 1171,
+      "sha256": "f882e4a6cb6577f6a234380b7327ad88f758921c59b09d3e22582d4cb8b724a9"
+    },
+    {
+      "path": "identityos/SECURITY.md",
+      "size": 127,
+      "sha256": "256a58f1cb76618c26a78c2046c61cc4c8d594c1282b565f5eb1c9f1b8b13582"
+    },
+    {
+      "path": "identityos/adapters/README.md",
+      "size": 126,
+      "sha256": "fb92d4e66a7638b8d8b4b9f746a33b73bb0511e6f33f9e35c2a86618d9689f19"
+    },
+    {
+      "path": "identityos/cli/README.md",
+      "size": 121,
+      "sha256": "ab69f7e54776e537dfd12a0abcdae9985ebcdf0956ae7a49e9e3f5ba476d8134"
+    },
+    {
+      "path": "identityos/coherency/README.md",
+      "size": 127,
+      "sha256": "701fbe449a49e3630c09cb70867cb89f8d0505e8d7f91af4be6d7d6d37d611c3"
+    },
+    {
+      "path": "identityos/conformance/README.md",
+      "size": 129,
+      "sha256": "7e7f84bcbfe654661037d0f455281437c8e1767df168eca776936da729dc2187"
+    },
+    {
+      "path": "identityos/docs/ADR/ADR-007-jsonld-format-stack.md",
+      "size": 407,
+      "sha256": "faa4ebc3a18497f9f8aa081a02da419e8c69e358df6c14da4a0c42fdbf86f738"
+    },
+    {
+      "path": "identityos/evals/README.md",
+      "size": 123,
+      "sha256": "f7f254a11f5ab1a05025f4c4657088c8279390a95d345b995a9e418b2afcae4f"
+    },
+    {
+      "path": "identityos/hydrator/README.md",
+      "size": 126,
+      "sha256": "386ceb46b3cdda72a3a9575ba4971e2a49c570514f65024221b56773e6da5c0c"
+    },
+    {
+      "path": "identityos/identity_graph/README.md",
+      "size": 132,
+      "sha256": "69fa8af554e72aedba0efdf01d393ee7d0f0f84b511b0bba0723eee88b25d60c"
+    },
+    {
+      "path": "identityos/infra/README.md",
+      "size": 123,
+      "sha256": "629b2cf8a4c836c5aa48d075a4becfadef48a07cfd26e595d4121c31dc06fea2"
+    },
+    {
+      "path": "identityos/memory_pipeline/README.md",
+      "size": 133,
+      "sha256": "1b9e5d9f01123c0dcdcc35ef5916794b055220cc3f7ebe47fb9cb3a187a291be"
+    },
+    {
+      "path": "identityos/policy/README.md",
+      "size": 124,
+      "sha256": "69150d96ba0f6046dc4d25d5fa3d5a47d3a39f2f541c49199c52d306b41118dd"
+    },
+    {
+      "path": "identityos/schemas/agent.schema.json",
+      "size": 366,
+      "sha256": "c4cead27265ec186d5a42c0be8cceca61897c356a29490b247c05761ff465d34"
+    },
+    {
+      "path": "identityos/schemas/jsonld/context/v1.jsonld",
+      "size": 152,
+      "sha256": "a2a148bbf04bd48d41469000b6e1f7548aa42590ddfd1a308de3ae84a65157cb"
+    },
+    {
+      "path": "identityos/schemas/profile.schema.json",
+      "size": 309,
+      "sha256": "b1d8049447a5c047472f79fdd35d12a9ab0d52d9e855530d6a8cd648f48915d1"
+    },
+    {
+      "path": "identityos/schemas/runtime_context.schema.json",
+      "size": 614,
+      "sha256": "24942bbb482531ca69517eb88c783a6e50b18f0cb531539828cb029e6be2175a"
+    },
+    {
+      "path": "identityos/schemas/runtime_payload.schema.json",
+      "size": 558,
+      "sha256": "e2e60377373b1c0cf83b2d8d7577888065519bdee9a345b7b02971a14abfc46b"
+    },
+    {
+      "path": "identityos/sdk/README.md",
+      "size": 121,
+      "sha256": "fa6726977134ddf7fb7e6edb1392612e43b6035604a9f476cc729e362cec4b75"
+    },
+    {
+      "path": "identityos/server/README.md",
+      "size": 124,
+      "sha256": "58c6d5c32ee19aac851c6134042d5a6f6c3b820116b5ccf2dd929c93871de77c"
+    },
+    {
+      "path": "identityos/snapshot/README.md",
+      "size": 126,
+      "sha256": "43b35a039d7b6964b1b33c454818d32b1047acb54a21295c58b0e0f6177915ef"
+    },
+    {
+      "path": "identityos/vault/README.md",
+      "size": 123,
+      "sha256": "2236a185021891a49569cb556b9bef2ce23a2113748c7a05127ea59f4ce8f11e"
+    }
+  ]
+}

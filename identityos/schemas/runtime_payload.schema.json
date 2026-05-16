@@ -1,0 +1,32 @@
+{
+  "$id": "https://identityos.dev/schemas/runtime_payload.schema.json",
+  "type": "object",
+  "required": [
+    "payload_id",
+    "agent_id",
+    "profile_id",
+    "substrate",
+    "trust_level",
+    "system_instructions"
+  ],
+  "properties": {
+    "payload_id": {
+      "type": "string"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "profile_id": {
+      "type": "string"
+    },
+    "substrate": {
+      "type": "string"
+    },
+    "trust_level": {
+      "type": "string"
+    },
+    "system_instructions": {
+      "type": "string"
+    }
+  }
+}

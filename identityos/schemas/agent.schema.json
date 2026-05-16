@@ -1,0 +1,24 @@
+{
+  "$id": "https://identityos.dev/schemas/agent.schema.json",
+  "type": "object",
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "name"
+  ],
+  "properties": {
+    "@context": {
+      "type": "string"
+    },
+    "@id": {
+      "type": "string"
+    },
+    "@type": {
+      "const": "AgentIdentity"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

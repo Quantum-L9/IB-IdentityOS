@@ -1,0 +1,3 @@
+# CONTRIBUTING.md
+
+Follow AGENTS.md, ADR_INDEX.md, and PHASE_1_BUILD_SCOPE.md.

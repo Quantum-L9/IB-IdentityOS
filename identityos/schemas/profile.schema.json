@@ -1,0 +1,20 @@
+{
+  "$id": "https://identityos.dev/schemas/profile.schema.json",
+  "type": "object",
+  "required": [
+    "@id",
+    "@type",
+    "role"
+  ],
+  "properties": {
+    "@id": {
+      "type": "string"
+    },
+    "@type": {
+      "const": "OperationalProfile"
+    },
+    "role": {
+      "type": "string"
+    }
+  }
+}
