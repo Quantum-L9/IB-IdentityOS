@@ -1,0 +1,56 @@
+schema: l9.identityos.brand-entity.acceptance/v1
+architecture_tests:
+  - id: A-001
+    assertion: one canonical identity graph serves person, role, and brand modes
+  - id: A-002
+    assertion: no adapter owns identity, policy, trust, or durable memory
+  - id: A-003
+    assertion: no brand-specific duplicate memory/hydration/policy subsystem is introduced
+  - id: A-004
+    assertion: material brand business facts resolve from declared authorities
+schema_tests:
+  - id: S-001
+    assertion: legacy AgentIdentity documents without identity_class remain valid during additive migration window
+  - id: S-002
+    assertion: new brand profile documents validate against BrandProfile schema
+  - id: S-003
+    assertion: invalid brand profiles with missing escalation or truth bindings fail validation
+hydration_tests:
+  - id: H-001
+    assertion: person identity hydrates through the standard hydrator
+  - id: H-002
+    assertion: role identity plus OperationalProfile hydrates through the same standard hydrator
+  - id: H-003
+    assertion: brand identity plus BrandProfile hydrates through the same standard hydrator
+  - id: H-004
+    assertion: lower-precedence runtime/channel context cannot expand identity or policy authority
+  - id: H-005
+    assertion: unavailable required authoritative truth causes blocked or escalated hydration, not fabricated content
+adapter_tests:
+  - id: AD-001
+    assertion: website adapter receives only bounded RuntimePayload
+  - id: AD-002
+    assertion: website adapter cannot directly write canonical durable memory
+  - id: AD-003
+    assertion: required policy survives adapter translation
+brand_eval_tests:
+  - id: E-001
+    assertion: unsupported commercial claim is blocked or escalated
+  - id: E-002
+    assertion: stale or unavailable required offer data is not presented as current fact
+  - id: E-003
+    assertion: escalation triggers under declared policy conditions
+  - id: E-004
+    assertion: runtime trust and scopes cap every brand action
+  - id: E-005
+    assertion: replay identifies identity, profile, policy, runtime, and adapter versions
+bootmyagent_tests:
+  - id: B-001
+    phase: FUTURE
+    assertion: install validates before hydration
+  - id: B-002
+    phase: FUTURE
+    assertion: install emits a deterministic receipt bound to payload digest and adapter version
+  - id: B-003
+    phase: FUTURE
+    assertion: install does not mutate external production systems without separate explicit authorization
