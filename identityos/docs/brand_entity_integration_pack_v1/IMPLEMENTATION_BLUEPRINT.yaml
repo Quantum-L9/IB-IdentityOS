@@ -1,0 +1,93 @@
+schema: l9.identityos.brand-entity.implementation-blueprint/v1
+status: ACCEPTED_ARCHITECTURE_INPUT
+product:
+  platform: IdentityOS
+  cli_surface: bootmyagent
+  expansion: person_role_brand_identity_modes
+objective: >
+  Extend IdentityOS from a generic portable agent identity/continuity layer into a
+  single identity substrate capable of governing person, role, and brand modes
+  without duplicating memory, hydration, policy, graph, or adapter authority.
+first_executable_outcome: >
+  Using the existing website chatbot adapter and standard hydrator, hydrate three
+  fixtures (person, role, brand) through the same pipeline and prove equivalent
+  policy/trust/memory boundaries, with BrandProfile adding external truth bindings
+  and commercial escalation behavior.
+beneficiary:
+  repository: Quantum-L9/IB-IdentityOS
+  repository_class: existing_product_repository
+  new_repository_required: false
+reuse_map:
+  identity_graph: REUSE_CURRENT_OWNER
+  memory_pipeline: REUSE_CURRENT_OWNER
+  hydrator: REUSE_CURRENT_OWNER
+  policy_engine: REUSE_CURRENT_OWNER
+  eval_runner: REUSE_CURRENT_OWNER
+  snapshots: REUSE_CURRENT_OWNER
+  website_adapter: REUSE_CURRENT_OWNER
+  bootmyagent_cli: REUSE_CURRENT_OWNER
+  brand_profile_schema: OWN_LOCALLY_AS_IDENTITYOS_CONTRACT
+  external_truth_connectors: BOUND_WITH_INTERFACE
+constellation_leverage:
+  highest_leverage_move: make identity class a first-class contract while preserving one runtime substrate
+  duplicate_owners_avoided:
+    - BrandOS
+    - brand_memory_service
+    - brand_hydrator
+    - brand_policy_engine
+  future_actions_accelerated:
+    - role-specific agents
+    - brand website agents
+    - voice and kiosk adapters
+    - enterprise identity governance
+    - cross-substrate identity portability
+invariants:
+  - graph is canonical
+  - runtime context is ephemeral
+  - memory admission is single-path
+  - adapters are dumb translators
+  - hydration precedes generation
+  - policy precedes execution
+  - trust and scopes are explicit bounds
+  - external business truth remains externally authoritative
+  - custom packaging does not become architecture
+modules_changed_or_added:
+  docs:
+    - ADR identity classes
+    - ADR brand truth boundary
+    - future ADR install contract
+  schemas:
+    - additive AgentIdentity identity_class
+    - BrandProfile
+    - future install receipt
+  hydrator:
+    - identity-class composition
+  evals:
+    - brand blocking and quality suites
+  adapter_fixture:
+    - website person/role/brand parity proof
+anti_goals:
+  - new BrandOS platform
+  - duplicate graph or memory store
+  - identity-owned product/pricing catalog
+  - adapter-owned business logic authority
+  - mandatory .aiid/.kern in Phase 1
+  - production deployment in this change
+trust_boundary:
+  private:
+    - canonical identity graph
+    - durable memory
+    - secrets and secret references
+    - policy internals
+  exported:
+    - bounded RuntimePayload only
+validation:
+  required:
+    - schema validation
+    - identity-class hydration parity
+    - policy precedence
+    - scope/trust non-escalation
+    - truth binding failure behavior
+    - adapter non-authority
+    - replay/version traceability
+unknowns_ref: UNKNOWN_REGISTER.yaml

@@ -1,0 +1,27 @@
+schema: l9.identityos.brand-entity.supersession/v1
+source_brief: Brief - IdentityOS Brand Entity.md
+rules:
+  - source_concept: .aiid is the canonical identity source
+    disposition: SUPERSEDED_IN_CURRENT_PHASE
+    replacement: portable identity graph plus agent.json/JSON-LD is canonical; .aiid remains a deferred packaging standard
+  - source_concept: .kern is the compiled runtime hydration artifact
+    disposition: SEMANTICALLY_PRESERVED_PHYSICALLY_DEFERRED
+    replacement: RuntimePayload is the current runtime hydration artifact; .kern may later package equivalent semantics
+  - source_concept: .overlay is a domain-specific behavior pack
+    disposition: SEMANTICALLY_PRESERVED_NOT_STANDARDIZED
+    replacement: OperationalProfile, policy, and bounded domain context compose the behavior layer
+  - source_concept: .cont is an active continuity packet
+    disposition: SEMANTICALLY_PRESERVED_NOT_STANDARDIZED
+    replacement: RuntimeContext plus replay/snapshot references represent bounded session continuity; canonical continuity remains externalized
+  - source_concept: npx bootmyagent install
+    disposition: REFINED
+    replacement: bootmyagent install is package-manager-agnostic future CLI semantics; current repo only locks validate and hydrate
+  - source_concept: brand personification requires its own runtime
+    disposition: REJECTED
+    replacement: brand is an IdentityOS identity class using the shared runtime architecture
+  - source_concept: chatbot becomes product/offer aware by embedding all business data in identity
+    disposition: REFINED
+    replacement: brand identity carries governed bindings to authoritative business truth rather than duplicating source-of-record state
+  - source_concept: personal clone -> role persona -> brand persona
+    disposition: PRESERVED_AND_FORMALIZED
+    replacement: phased proof ladder for person, role, and brand identity modes

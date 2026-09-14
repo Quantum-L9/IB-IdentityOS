@@ -1,0 +1,64 @@
+schema: l9.identityos.brand-entity.authority-map/v1
+artifact: identityos-brand-entity-integration-pack-v1.0.0
+states:
+  LOCKED:
+    - id: AUTH-001
+      statement: IdentityOS is the canonical platform owner for identity, continuity, policy, hydration, memory admission, trust, evals, snapshots, and adapters.
+      source: Quantum-L9/IB-IdentityOS identityos/README.md and REPO_SPEC.md
+    - id: AUTH-002
+      statement: BootMyAgent is the CLI and install surface for IdentityOS.
+      source: Quantum-L9/IB-IdentityOS identityos/README.md
+    - id: AUTH-003
+      statement: The portable identity graph is canonical and runtime context is ephemeral.
+      source: Quantum-L9/IB-IdentityOS identityos/README.md and AGENTS.md
+    - id: AUTH-004
+      statement: Adapters are translators and must not own identity, memory, policy, or trust.
+      source: Quantum-L9/IB-IdentityOS identityos/README.md and AGENTS.md
+    - id: AUTH-005
+      statement: Custom .aiid and .kern formats are deferred and are not mandatory in Phase 1.
+      source: Quantum-L9/IB-IdentityOS identityos/README.md, REPO_SPEC.md, AGENTS.md
+    - id: AUTH-006
+      statement: Brand Entity integrates into IdentityOS rather than creating a sibling BrandOS or independent brand runtime.
+      source: current user instruction plus architecture reconciliation
+    - id: AUTH-007
+      statement: IdentityOS identity modes are person, role, and brand over one runtime architecture.
+      source: current user instruction plus supplied Brand Entity brief
+  ACCEPTED:
+    - id: AUTH-101
+      statement: Brand mode requires governed voice, behavior, offers, escalation, compliance, versioning, and optional presentation/avatar metadata.
+      source: supplied Brand Entity brief
+    - id: AUTH-102
+      statement: Personal identity proves portability/hydration, role proves bounded adaptation, brand proves commercial scale.
+      source: supplied Brand Entity brief
+    - id: AUTH-103
+      statement: External product, offer, inventory, CRM, billing, and policy truth remains referenced from authoritative source systems rather than duplicated into brand identity state.
+      source: architecture reconciliation
+  PROPOSED:
+    - id: AUTH-201
+      statement: bootmyagent install becomes a future one-command composition/install surface after validate and hydrate contracts stabilize.
+      source: supplied Brand Entity brief, realigned to current Phase 1
+    - id: AUTH-202
+      statement: Brand identity can later be packaged as .aiid after JSON/JSON-LD semantics are stable.
+      source: supplied Brand Entity brief plus existing IdentityOS deferral law
+  DEFERRED:
+    - id: AUTH-301
+      statement: .aiid as required runtime packaging
+    - id: AUTH-302
+      statement: .kern as required runtime packaging
+    - id: AUTH-303
+      statement: .overlay custom extension
+    - id: AUTH-304
+      statement: .cont custom extension
+    - id: AUTH-305
+      statement: robot and vehicle adapters
+    - id: AUTH-306
+      statement: enterprise SSO and multi-region consistency
+    - id: AUTH-307
+      statement: trademark or legal protection strategy for AI brand identity
+  REJECTED:
+    - id: AUTH-401
+      statement: A separate BrandOS platform or duplicate brand memory/hydration/policy stack.
+    - id: AUTH-402
+      statement: Brand adapters may directly write canonical memory or identity state.
+    - id: AUTH-403
+      statement: IdentityOS should become the system of record for pricing, inventory, offers, CRM, billing, or product catalogs.

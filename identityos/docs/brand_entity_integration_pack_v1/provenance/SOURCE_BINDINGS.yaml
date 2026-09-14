@@ -1,0 +1,30 @@
+schema: l9.identityos.brand-entity.source-bindings/v1
+sources:
+  - id: source-brief
+    kind: uploaded_file
+    name: Brief - IdentityOS Brand Entity.md
+    sha256: 649f095e9a7dec4bac88ffe22ac63a827b816d17e6d6bcf777f797484dc3606f
+    role: concept_donor
+  - id: identityos-repo
+    kind: github_repository
+    repository: Quantum-L9/IB-IdentityOS
+    observed_ref: main
+    observed_commit: f9fdd090e4dd85a63c6497d34d894e6313ef80a3
+    role: current_architecture_authority
+    inspected:
+      - identityos/README.md
+      - identityos/REPO_SPEC.md
+      - identityos/PHASE_1_BUILD_SCOPE.md
+      - identityos/AGENTS.md
+      - identityos/schemas/agent.schema.json
+      - identityos/schemas/profile.schema.json
+      - identityos/schemas/runtime_context.schema.json
+      - identityos/schemas/runtime_payload.schema.json
+  - id: current-user-instruction
+    kind: operator_instruction
+    role: lock_integration_direction
+    statement: revise, refine, realign, and formalize the Brand Entity concept as an integration into IdentityOS
+precedence:
+  - current-user-instruction
+  - current IdentityOS repo architecture and invariants
+  - source brief concepts

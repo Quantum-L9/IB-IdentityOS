@@ -1,0 +1,27 @@
+schema: l9.identityos.brand-entity.unknown-register/v1
+unknowns:
+  - id: U-001
+    question: exact persistence representation for identity_class in the future identity graph
+    disposition: BOUND_WITH_INTERFACE
+    why_non_blocking: schema/API contract can expose identity_class before storage mapping is finalized
+  - id: U-002
+    question: whether .aiid and .kern should ever become public packaging standards
+    disposition: DEFER_OUTSIDE_SLICE
+  - id: U-003
+    question: exact package-manager distribution for bootmyagent install, including whether an npm npx surface is useful
+    disposition: DEFER_OUTSIDE_SLICE
+  - id: U-004
+    question: numeric quality thresholds for voice consistency and brand familiarity
+    disposition: VERIFY_NOW_LATER_WITH_MEASURED_BASELINES
+  - id: U-005
+    question: trademark, right-of-publicity, and legal protection model for portable brand/person identity artifacts
+    disposition: DEFER_OUTSIDE_SLICE
+  - id: U-006
+    question: authoritative connector contracts for product, pricing, offer, CRM, billing, and policy systems
+    disposition: BOUND_WITH_INTERFACE
+  - id: U-007
+    question: whether brand profiles require cryptographic signing before external distribution
+    disposition: DEFER_OUTSIDE_SLICE
+  - id: U-008
+    question: exact hosted SaaS control-plane architecture for enterprise brand management
+    disposition: DEFER_OUTSIDE_SLICE

@@ -1,0 +1,53 @@
+schema: l9.identityos.bootmyagent-install/v1
+status: PROPOSED_FUTURE_SURFACE
+owner: IdentityOS
+cli: bootmyagent
+purpose: one-command validation, composition, hydration, adapter binding, and preflight for a target surface
+prerequisites:
+  - bootmyagent validate is stable
+  - bootmyagent hydrate is stable
+  - target adapter has a versioned contract
+  - install receipt schema exists
+conceptual_command:
+  - "bootmyagent install --identity ./agent.json --brand-profile ./acme.brand.json --target website"
+  - "bootmyagent install --identity ./agent.json --profile ./sales-role.json --target website"
+steps:
+  - validate identity and profile schemas
+  - resolve identity_class
+  - resolve allowed scopes and trust bounds
+  - resolve required policy and truth bindings
+  - hydrate bounded RuntimePayload
+  - bind target adapter without transferring authority
+  - run blocking preflight evals
+  - emit deterministic install receipt
+  - produce target configuration or local install artifact
+must_not:
+  - mutate production systems without explicit separate authorization
+  - provision secrets implicitly
+  - bypass memory admission
+  - copy full identity graph into target runtime
+  - weaken policy for target compatibility
+  - invent unavailable brand facts
+receipt:
+  required_fields:
+    - install_id
+    - identity_id
+    - identity_class
+    - identity_version
+    - profile_version_refs
+    - runtime_payload_digest
+    - adapter
+    - adapter_version
+    - target
+    - policy_refs
+    - eval_results
+    - generated_at
+    - status
+  status_values:
+    - READY
+    - BLOCKED
+    - DEGRADED
+    - INVALID
+packaging:
+  phase_1: normal JSON/JSON-LD paths
+  future: .aiid and .kern may be standardized by separate ADR

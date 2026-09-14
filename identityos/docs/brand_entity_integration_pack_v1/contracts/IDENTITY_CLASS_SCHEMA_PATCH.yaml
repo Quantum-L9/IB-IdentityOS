@@ -1,0 +1,43 @@
+schema: l9.identityos.identity-class-schema-patch/v1
+objective: add identity_class semantics without breaking existing Phase 1 JSON/JSON-LD contracts
+changes:
+  schemas/agent.schema.json:
+    strategy: ADDITIVE_FIRST
+    add_properties:
+      identity_class:
+        enum: [person, role, brand]
+        default_semantics_when_missing: person
+      identity_version:
+        type: string
+    compatibility:
+      phase_1_1: identity_class optional for legacy agent documents
+      future_major_schema: identity_class may become required after migration evidence
+  schemas/profile.schema.json:
+    strategy: PRESERVE
+    reason: existing OperationalProfile remains the role/domain behavior contract
+  schemas/brand_profile.schema.json:
+    strategy: ADD_NEW
+    purpose: typed brand-only identity behavior, authority, and truth bindings
+  schemas/runtime_context.schema.json:
+    strategy: ADDITIVE_OPTIONAL
+    candidate_fields:
+      channel:
+        type: string
+      requested_identity_mode:
+        enum: [person, role, brand]
+    invariant: trust_level and allowed_scopes remain authoritative runtime bounds
+  schemas/runtime_payload.schema.json:
+    strategy: EXTEND_AFTER_HYDRATOR_CONTRACT_REVIEW
+    required_semantics:
+      - resolved_identity_class
+      - identity_version
+      - profile_version_refs
+      - policy_version_refs
+      - source_provenance_refs
+      - adapter_target
+      - evaluation_receipt_ref
+non_goals:
+  - mandatory custom extensions
+  - separate per-class memory pipelines
+  - separate per-class hydrators
+  - adapter-owned authority
