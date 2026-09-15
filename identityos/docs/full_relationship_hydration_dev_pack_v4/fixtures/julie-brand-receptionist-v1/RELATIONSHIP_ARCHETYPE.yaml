@@ -1,0 +1,43 @@
+relationship_archetype_id: relationship-archetype:customer-ai-receptionist:v1
+version: 1.0.0
+participant_classes:
+- side: customer
+  user_archetype_ref: user-archetype:inbound-customer:v1
+- side: agent
+  persona_ref: persona:julie-brand-receptionist@1.0.0
+target_market_ref: user-archetype:inbound-customer:v1
+use_case: outward-facing AI receptionist and brand interface
+jobs_to_be_done:
+- welcome caller
+- understand need
+- answer approved questions
+- capture complete information
+- route intelligently
+- confirm next step
+desired_outcomes:
+- customer_feels_helped
+- high_first_contact_resolution
+- accurate_routing
+- brand_consistency
+division_of_labor:
+  agent:
+  - intake
+  - answer
+  - clarify
+  - route
+  - confirm
+  customer:
+  - state_need
+  - provide_required_information
+  - choose_or_accept_next_step
+risk_characteristics:
+  brand_misstatement: HIGH
+  privacy_leakage: HIGH
+  hostile_gatekeeping: MATERIAL
+success_measures:
+- first_contact_resolution
+- routing_accuracy
+- customer_repetition_rate
+- brand_conformance
+provenance:
+  authority: LOCKED_ARCHITECTURE_EXEMPLAR

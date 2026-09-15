@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/relationship_archetype.schema.json",
+  "title": "RelationshipArchetype",
+  "type": "object",
+  "required": [
+    "relationship_archetype_id",
+    "version",
+    "participant_classes",
+    "use_case",
+    "jobs_to_be_done",
+    "desired_outcomes",
+    "division_of_labor",
+    "provenance"
+  ],
+  "properties": {
+    "relationship_archetype_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "participant_classes": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object"
+      }
+    },
+    "use_case": {
+      "type": "string"
+    },
+    "target_market_ref": {
+      "type": "string"
+    },
+    "jobs_to_be_done": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "desired_outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "division_of_labor": {
+      "type": "object"
+    },
+    "risk_characteristics": {
+      "type": "object"
+    },
+    "success_measures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

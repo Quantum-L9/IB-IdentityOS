@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/persona_archetype.schema.json",
+  "title": "PersonaArchetype",
+  "type": "object",
+  "required": [
+    "archetype_id",
+    "version",
+    "name",
+    "behavioral_components",
+    "provenance"
+  ],
+  "properties": {
+    "archetype_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "behavioral_components": {
+      "type": "object"
+    },
+    "compatible_relationship_archetype_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "brand_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

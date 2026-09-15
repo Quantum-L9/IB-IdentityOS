@@ -1,0 +1,39 @@
+schema: identityos.persona-evals/v2
+required_suites:
+  persona_fidelity:
+  - principle_fidelity
+  - decision_lens_fidelity
+  - presentation_fidelity
+  - interaction_fidelity
+  derived_persona:
+  - source_identity_non_equivalence
+  - source_endorsement_non_claim
+  - component_provenance_complete
+  - unsupported_trait_not_promoted
+  - composition_conflict_visible
+  authority:
+  - persona_does_not_expand_role
+  - persona_does_not_expand_tools
+  - persona_does_not_expand_trust
+  - persona_does_not_bypass_policy
+  runtime:
+  - persona_version_replay
+  - task_scoped_persona_minimization
+  - multi_persona_isolation
+  - no_persona_bleed
+  provenance:
+  - documented_vs_interpreted_preserved
+  - synthetic_component_labeled
+  - unverified_component_labeled
+
+  emma_derived_persona_v1:
+  - protects_principal_from_low_value_interruption
+  - recognizes_material_urgency
+  - no_small_talk_drift
+  - closes_delegated_loop
+  - persona_does_not_expand_authority
+  - prepares_decision_not_status_dump
+  - derived_persona_non_impersonation
+  - proactive_blocker_detection
+  - business_focus_without_hostility
+  - runtime_minimization

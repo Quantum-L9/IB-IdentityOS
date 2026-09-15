@@ -1,0 +1,161 @@
+schema: identityos.architecture-lock/v4
+status: LOCKED
+mission: Make every governed agent fully hydrated for its specific counterpart and relationship before first interaction, then continuously replace archetypal priors with evidence-backed actor and relationship knowledge.
+root_invariants:
+- id: IDOS-HYD-001
+  rule: Never hand a principal a cold agent.
+- id: IDOS-HYD-002
+  rule: Never hand an agent a cold principal or counterpart.
+- id: IDOS-HYD-003
+  rule: Cold hydration precedes governed runtime activation.
+- id: IDOS-HYD-004
+  rule: Hydration targets the agent-in-relationship, not the agent in isolation.
+- id: IDOS-PREF-001
+  rule: Preferences are canonical behavioral state and must influence runtime compilation.
+- id: IDOS-PREF-002
+  rule: Embeddings and vector projections are retrieval aids only and may not be canonical preference authority.
+- id: IDOS-DERIVE-001
+  rule: Derived priors never outrank direct evidence about the actual actor.
+- id: IDOS-AUTH-001
+  rule: Persona and preferences never manufacture authority, consent, trust, or tool permissions.
+- id: IDOS-EPI-001
+  rule: Unknown remains Unknown when evidence is insufficient.
+- id: IDOS-LEARN-001
+  rule: Learning improves subsequent hydration through evidence and supersession rather than silent mutation.
+core_primitives:
+- Identity
+- Persona
+- DerivedPersona
+- PreferenceProfile
+- DerivedPreferenceProfile
+- PersonaArchetype
+- UserArchetype
+- RelationshipArchetype
+- DerivedActorProfile
+- EffectivePreferenceProfile
+- EffectiveRelationshipProfile
+- Role
+- Actor
+- Relationship
+- ContextItem
+- ConsentGrant
+- Policy
+- Trust
+- Hydration
+- HydrationReceipt
+- Snapshot
+- Eval
+semantic_law:
+  identity: Who or what persists?
+  persona: How does this identity naturally express, judge, and behave?
+  preference_profile: How does this identity want interaction and work to be performed?
+  persona_archetype: What reusable agent-side behavioral template is applicable?
+  user_archetype: What evidence-backed counterpart cohort pattern is applicable?
+  relationship_archetype: Why do these actor classes interact, how should labor be divided, and what outcomes define success?
+  derived_persona: What agent-side behavioral baseline is derived for this relationship?
+  derived_preference_profile: What probabilistic counterpart-side preference baseline is derived for cold start?
+  effective_relationship_profile: What resolved interaction contract applies to these actual actors now?
+  hydration: What minimum sufficient, authorized, provenance-bound context and behavior must exist before runtime activation?
+derivation_law:
+  derived_persona_inputs:
+  - PersonaArchetype
+  - RelationshipArchetype
+  - BrandContext
+  - DomainContext
+  - PersonaEvidence
+  derived_preference_inputs:
+  - UserArchetype
+  - RelationshipArchetype
+  - BrandContext
+  - DomainContext
+  - PreferenceEvidence
+  join_inputs:
+  - DerivedPersona
+  - DerivedPreferenceProfile
+  - KnownIndividualPreferences
+  - RelationshipEvidence
+  - Role
+  - Policy
+  - Trust
+  - Authority
+  - RuntimeContext
+  join_output: EffectiveRelationshipProfile
+preference_authority_order:
+- system_safety_legal_policy
+- role_authority_and_consent
+- current_explicit_counterpart_instruction
+- confirmed_individual_preference
+- relationship_specific_learned_preference
+- domain_specific_learned_preference
+- derived_preference_profile_prior
+- research_backed_prior
+- model_inferred_prior
+- generic_default
+cold_hydration_parallelism:
+  agent_branch:
+  - resolve_agent_identity
+  - resolve_persona_archetype
+  - resolve_relationship_archetype
+  - derive_or_load_persona
+  - bind_role_and_authority
+  counterpart_branch:
+  - resolve_counterpart_identity
+  - resolve_user_archetype
+  - resolve_relationship_archetype
+  - load_known_preferences
+  - derive_or_load_preference_profile
+  join_barrier:
+  - resolve_conflicts
+  - apply_direct_evidence
+  - apply_policy_consent_trust
+  - compile_effective_relationship_profile
+  - minimize
+  - emit_runtime_payload_and_hydration_receipt
+identity_kinds:
+  initial:
+  - human
+  - synthetic_agent
+  - brand
+  - organization
+  rule: derived profiles never become identity kinds
+brand_law:
+  technologified_brand_definition: A brand whose identity, values, knowledge, interaction standards, preferences, and relationship behaviors are codified into executable agent behavior.
+  brand_identity_may_project:
+  - DerivedPersona
+  - DerivedPreferenceProfile
+  - RelationshipArchetype constraints
+  brand_is_not_shared_personality: true
+  brand_constraints_may_shape_multiple_distinct_personas: true
+cohort_learning_law:
+  individual_evidence_may_improve_cohort_models: true
+  requires_privacy_safe_aggregation: true
+  cross_customer_identifiable_fact_leakage_forbidden: true
+  single_actor_evidence_cannot_promote_cohort_preference_without_admission: true
+  coverage_range_0_50_to_0_80_is_hypothesis_not_invariant: true
+memory_law:
+  preference_evidence_is_durable_memory_candidate: true
+  profile_resolution_owned_by_identityos: true
+  canonical_memory_write_path_must_be_preserved: true
+  graphiti_is_projection_or_search_only: true
+  embeddings_are_index_only: true
+  runtime_payload_is_not_source_of_truth: true
+anti_goals:
+- blank_agent_onboarding
+- blank_user_onboarding
+- preference_as_vector_only
+- persona_as_prompt_blob
+- cohort_prior_as_individual_truth
+- stereotype_without_evidence
+- persona_authority_escalation
+- preference_authority_escalation
+- cross_customer_preference_leakage
+- duplicate_memory_store
+- workflow_orchestration_engine
+- derived_person_as_identity
+- brand_voice_as_entire_brand_identity
+canonical_exemplars:
+  emma_derived_persona_v1: fixtures/emma-derived-persona-v1/Emma-derived-persona.V1.yaml
+  executive_gatekeeper_relationship_v1: fixtures/executive-gatekeeper-relationship-v1/RELATIONSHIP_ARCHETYPE.yaml
+  executive_derived_preference_v1: fixtures/executive-gatekeeper-relationship-v1/DERIVED_PREFERENCE_PROFILE.yaml
+  julie_brand_receptionist_v1: fixtures/julie-brand-receptionist-v1/JULIE_DERIVED_PERSONA.yaml
+  lcto_cold_start_failure: failure_modes/LCTO_COLD_AGENT_FAILURE.md

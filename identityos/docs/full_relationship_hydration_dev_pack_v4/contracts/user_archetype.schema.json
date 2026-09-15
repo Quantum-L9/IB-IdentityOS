@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/user_archetype.schema.json",
+  "title": "UserArchetype",
+  "type": "object",
+  "required": [
+    "archetype_id",
+    "version",
+    "target_market",
+    "environment",
+    "likely_jobs",
+    "provenance"
+  ],
+  "properties": {
+    "archetype_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "target_market": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "object"
+    },
+    "likely_jobs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "likely_pains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "leverage_opportunities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

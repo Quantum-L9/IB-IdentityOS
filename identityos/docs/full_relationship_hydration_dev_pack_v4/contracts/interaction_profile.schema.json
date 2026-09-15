@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/interaction_profile.schema.json",
+  "title": "InteractionProfile",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "provenance_refs"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "questioning_style": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "disagreement_style": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "collaboration_style": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "feedback_style": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conflict_behavior": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "multi_persona_behavior": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "provenance_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

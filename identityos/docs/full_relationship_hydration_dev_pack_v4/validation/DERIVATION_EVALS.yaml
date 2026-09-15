@@ -1,0 +1,16 @@
+schema: identityos.derivation-evals/v1
+metrics:
+- cold_start_acceptance_rate
+- immediate_override_rate
+- preference_overlap
+- cohort_cluster_stability
+- time_to_personalization
+- contradiction_rate
+- confidence_calibration_error
+- relationship_outcome_lift
+rules:
+- measure_by_preference_dimension_not_only_profile_average
+- report cohort size and provenance
+- do not publish 50-80 percent as achieved without measured evidence
+- compare derived prior against generic cold baseline
+- track negative transfer from wrong archetype selection

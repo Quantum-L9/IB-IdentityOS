@@ -1,0 +1,40 @@
+profile_id: derived-pref:inbound-customer-ai-receptionist:v1
+version: 1.0.0
+user_archetype_ref: user-archetype:inbound-customer:v1
+relationship_archetype_ref: relationship-archetype:customer-ai-receptionist:v1
+derivation:
+  methods:
+  - SYNTHETIC_REFERENCE_HYPOTHESIS
+  cohort_evidence_status: NOT_YET_MEASURED
+preferences:
+- preference_key: interaction.clear_next_step
+  value: true
+  confidence: 0.6
+  strength: SHOULD
+  status: BOOTSTRAP_PRIOR
+  support:
+    status: HYPOTHESIS
+  provenance_refs:
+  - source:relationship-design
+- preference_key: interaction.avoid_repeating_information
+  value: true
+  confidence: 0.6
+  strength: SHOULD
+  status: BOOTSTRAP_PRIOR
+  support:
+    status: HYPOTHESIS
+  provenance_refs:
+  - source:relationship-design
+- preference_key: communication.jargon
+  value: MINIMIZE_UNLESS_USER_SIGNALS_EXPERTISE
+  confidence: 0.55
+  strength: MAY
+  status: BOOTSTRAP_PRIOR
+  support:
+    status: HYPOTHESIS
+  provenance_refs:
+  - source:relationship-design
+provenance:
+  note: Synthetic test priors only.
+individual_truth_claimed: false
+authority_granted: false

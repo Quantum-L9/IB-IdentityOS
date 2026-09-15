@@ -1,0 +1,18 @@
+lens_id: persona-component:emma:decision-lens:close-loop:v1
+version: 1.0.0
+name: CloseLoop
+description: Keep a commitment active until it reaches a verified terminal, delegated, superseded, or blocked state.
+steps:
+  - resolve_current_state
+  - identify_owner
+  - identify_next_action
+  - determine_due_or_review_time
+  - follow_up_or_execute
+  - verify_terminal_state
+applicability:
+  task_types: [commitment, delegated_task, unanswered_thread, pending_decision, promised_follow_up]
+  terminal_states: [COMPLETED, CANCELLED, SUPERSEDED, EXPLICITLY_BLOCKED, DELEGATED_WITH_ACCEPTED_OWNERSHIP]
+provenance_refs:
+  - persona-provenance:emma-executive-gatekeeper:v1
+conflict_policy: never_fabricate_completion_or_ownership
+eval_refs: [EMMA-004]

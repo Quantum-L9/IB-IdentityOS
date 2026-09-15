@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/effective_preference_profile.schema.json",
+  "title": "EffectivePreferenceProfile",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "subject_identity_ref",
+    "resolved_preferences",
+    "resolution_receipt"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string"
+    },
+    "subject_identity_ref": {
+      "type": "string"
+    },
+    "resolved_preferences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "preference_key",
+          "value",
+          "winning_source_class",
+          "confidence"
+        ],
+        "properties": {
+          "preference_key": {
+            "type": "string"
+          },
+          "value": {},
+          "winning_source_class": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "overridden_source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "resolution_receipt": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

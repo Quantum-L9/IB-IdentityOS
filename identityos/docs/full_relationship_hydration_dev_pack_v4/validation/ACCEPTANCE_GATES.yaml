@@ -1,0 +1,48 @@
+schema: identityos.acceptance-gates/v4
+status: REQUIRED
+full_hydration:
+  must_pass:
+  - principal_never_receives_cold_agent
+  - agent_never_receives_cold_counterpart_when_counterpart_identity_is_required
+  - relationship_archetype_resolved_before_activation
+  - agent_and_counterpart_branches_join_before_runtime
+  - explicit_unknowns_preserved
+  - full_hydration_receipt_emitted
+preference_mirror:
+  must_pass:
+  - preferences_are_structured_behavioral_state
+  - preference_resolution_changes_runtime_behavior
+  - embeddings_are_not_preference_authority
+  - explicit_preference_overrides_derived_prior
+  - correction_can_generate_preference_evidence
+  - preference_history_uses_supersession_not_silent_mutation
+archetypes:
+  must_pass:
+  - persona_archetype_not_identity_kind
+  - user_archetype_not_individual_truth
+  - relationship_archetype_is_derivation_input_for_both_sides
+  - target_market_without_use_case_is_insufficient_for_relationship_derivation
+  - 50_80_coverage_is_not_hardcoded_as_fact
+cohort_learning:
+  must_pass:
+  - cohort_update_requires_independent_support
+  - cross_customer_identifiable_preference_leakage_blocked
+  - cohort_prior_confidence_is_calibrated
+  - single_user_pattern_cannot_silently_promote_to_cohort_truth
+authority:
+  must_pass:
+  - persona_cannot_expand_role
+  - preference_cannot_expand_role
+  - relationship_archetype_cannot_expand_role
+  - derived_brand_profile_cannot_expand_tool_permissions
+  - policy_consent_trust_applied_before_runtime_payload
+technologified_brand:
+  must_pass:
+  - one_brand_supports_multiple_distinct_personas
+  - brand_constraints_shared_without_persona_bleed
+  - Emma_and_Julie_can_diverge_in_presentation_and_job
+  - brand_truth_boundary_prevents_unsourced_claims
+lcto_regression:
+  must_pass:
+  - agent_capability_without_counterpart_relationship_hydration_is_not_full_hydration
+release_rule: ALL_APPLICABLE_GATES_PASS

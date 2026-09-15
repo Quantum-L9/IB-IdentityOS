@@ -1,0 +1,16 @@
+evidence:
+  evidence_id: pref-evidence:executive-reference:001
+  subject_identity_ref: identity:executive-reference-principal
+  evidence_type: EXPLICIT_STATEMENT
+  scope: RELATIONSHIP
+  assertion:
+    preference_key: communication.briefing_depth
+    value: DETAILED_WHEN_STRATEGIC
+  confidence: 1.0
+  provenance_ref: fixture:explicit-principal-statement
+  relationship_ref: relationship:emma-executive-reference
+  observed_at: '2026-09-15T00:00:00Z'
+  privacy_class: RELATIONSHIP_PRIVATE
+expected_resolution:
+  winning_source_class: EXPLICIT_CURRENT_OR_CONFIRMED_INDIVIDUAL
+  cohort_prior_must_not_override: true

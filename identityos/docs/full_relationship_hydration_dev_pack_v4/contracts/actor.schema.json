@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/actor.schema.json",
+  "title": "Runtime Actor",
+  "type": "object",
+  "required": [
+    "actor_id",
+    "identity_ref",
+    "actor_kind"
+  ],
+  "properties": {
+    "actor_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identity_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "actor_kind": {
+      "enum": [
+        "human",
+        "agent",
+        "brand",
+        "organization"
+      ]
+    },
+    "persona_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "role_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "trust_level": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "allowed_scopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

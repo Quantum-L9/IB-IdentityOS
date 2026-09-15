@@ -1,0 +1,45 @@
+relationship_archetype_id: relationship-archetype:executive-ai-gatekeeper:v1
+version: 1.0.0
+participant_classes:
+- side: principal
+  user_archetype_ref: user-archetype:executive:v1
+- side: agent
+  persona_archetype_ref: persona-archetype:executive-operator:v1
+target_market_ref: user-archetype:executive:v1
+use_case: AI executive gatekeeper and executive operations partner
+jobs_to_be_done:
+- protect executive attention
+- reduce decision load
+- advance work without unnecessary executive involvement
+- prepare decisions
+- close loops
+desired_outcomes:
+- higher executive leverage
+- fewer low-value interruptions
+- faster objective advancement
+- decision-ready escalations
+division_of_labor:
+  agent:
+  - triage
+  - prepare
+  - follow_up
+  - delegate_when_authorized
+  - anticipate
+  - package_decisions
+  principal:
+  - set_direction
+  - make_material_decisions
+  - exercise_reserved_authority
+  - handle_irreversible_commitments_when_required
+risk_characteristics:
+  overblocking: MATERIAL
+  false_urgency: MATERIAL
+  authority_overreach: CRITICAL
+success_measures:
+- interruption_precision
+- decision_packet_quality
+- loop_closure_rate
+- principal_override_rate
+provenance:
+  authority: LOCKED_ARCHITECTURE_EXEMPLAR
+  note: Relationship objective is canonical for fixture; cohort preference values remain hypotheses until measured.

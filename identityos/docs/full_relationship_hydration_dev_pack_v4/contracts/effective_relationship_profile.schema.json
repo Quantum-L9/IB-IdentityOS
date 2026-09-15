@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/effective_relationship_profile.schema.json",
+  "title": "EffectiveRelationshipProfile",
+  "type": "object",
+  "required": [
+    "relationship_profile_id",
+    "actor_refs",
+    "relationship_archetype_ref",
+    "agent_persona_ref",
+    "counterpart_preference_profile_ref",
+    "role_ref",
+    "authority_ref",
+    "unknowns"
+  ],
+  "properties": {
+    "relationship_profile_id": {
+      "type": "string"
+    },
+    "actor_refs": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "relationship_archetype_ref": {
+      "type": "string"
+    },
+    "agent_persona_ref": {
+      "type": "string"
+    },
+    "counterpart_preference_profile_ref": {
+      "type": "string"
+    },
+    "brand_profile_ref": {
+      "type": "string"
+    },
+    "role_ref": {
+      "type": "string"
+    },
+    "authority_ref": {
+      "type": "string"
+    },
+    "behavioral_contract": {
+      "type": "object"
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

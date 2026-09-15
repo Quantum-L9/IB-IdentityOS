@@ -1,0 +1,53 @@
+schema: identityos.authority-map/v4
+status: LOCKED
+beneficiary:
+  repository: Quantum-L9/IB-IdentityOS
+  platform: IdentityOS
+canonical_owners:
+  identity: IdentityOS
+  persona: IdentityOS
+  persona_archetype: IdentityOS
+  preference_profile: IdentityOS
+  user_archetype: IdentityOS
+  relationship_archetype: IdentityOS
+  derived_profile_semantics: IdentityOS
+  relationship_context_model: IdentityOS
+  preference_resolution: IdentityOS
+  full_relationship_hydration: IdentityOS
+  runtime_payload_compilation: IdentityOS
+  hydration_receipts: IdentityOS
+  evals: IdentityOS
+external_owners:
+  application_workflow: consuming_application
+  business_domain_logic: consuming_application
+  source_of_truth_business_data: authoritative_external_system
+  orchestration_between_agents: external_orchestrator
+  model_inference: selected_model_or_substrate
+  application_specific_tools: consuming_application
+shared_boundary:
+  memory_persistence: canonical memory service stores admitted immutable evidence; IdentityOS owns identity/preference semantics and resolution
+  graphiti: projection/search only
+  brand_source_material: authoritative brand systems or supplied evidence remain source authority
+forbidden_duplicate_authorities:
+- application prompt files canonically owning persona
+- application prompt files canonically owning preference profile
+- separate brand persona engine
+- separate user preference database
+- separate relationship hydration engine
+- embeddings treated as preference truth
+- Graphiti projection treated as canonical identity or preference truth
+precedence:
+- current_explicit_actor_instruction
+- IdentityOS runtime invariants
+- IdentityOS schemas_and_contracts
+- this_dev_pack
+- earlier_identityos_packs
+- historical_promptos_artifacts
+locked_decisions:
+- Full relationship hydration is the root runtime objective.
+- Persona and PreferenceProfile are mirrored but non-identical identity projections.
+- RelationshipArchetype is a first-class derivation input for both sides.
+- DerivedPreferenceProfile is a probabilistic bootstrap prior until individual evidence promotes or overrides it.
+- Preferences must affect runtime behavior through resolution and compilation.
+- A cold agent or cold counterpart is an architecture failure, not an onboarding inconvenience.
+- Brand identity may be technologified into multiple purpose-built personas and preference profiles without forcing one shared personality.

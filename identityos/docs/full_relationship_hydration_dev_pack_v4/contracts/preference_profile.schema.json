@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/preference_profile.schema.json",
+  "title": "PreferenceProfile",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "subject_identity_ref",
+    "version",
+    "preferences"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string"
+    },
+    "subject_identity_ref": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "preferences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "preference_key",
+          "value",
+          "strength",
+          "scope",
+          "status"
+        ],
+        "properties": {
+          "preference_key": {
+            "type": "string"
+          },
+          "value": {},
+          "strength": {
+            "enum": [
+              "MUST",
+              "SHOULD",
+              "MAY"
+            ]
+          },
+          "scope": {
+            "enum": [
+              "GLOBAL",
+              "RELATIONSHIP",
+              "ROLE",
+              "DOMAIN",
+              "TASK",
+              "SESSION"
+            ]
+          },
+          "status": {
+            "enum": [
+              "CANDIDATE",
+              "ACTIVE",
+              "CONTESTED",
+              "SUPERSEDED",
+              "REVOKED"
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "supersedes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "provenance_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

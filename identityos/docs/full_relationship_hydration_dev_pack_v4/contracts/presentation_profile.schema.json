@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/presentation_profile.schema.json",
+  "title": "PresentationProfile",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "provenance_refs"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tone": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "voice": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "response_structure": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "language_patterns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "audience_adaptation": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "provenance_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
