@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/derived_preference_profile.schema.json",
+  "title": "DerivedPreferenceProfile",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "version",
+    "user_archetype_ref",
+    "relationship_archetype_ref",
+    "derivation",
+    "preferences",
+    "provenance"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "user_archetype_ref": {
+      "type": "string"
+    },
+    "relationship_archetype_ref": {
+      "type": "string"
+    },
+    "brand_context_ref": {
+      "type": "string"
+    },
+    "domain_context_ref": {
+      "type": "string"
+    },
+    "derivation": {
+      "type": "object"
+    },
+    "preferences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "preference_key",
+          "value",
+          "confidence",
+          "strength",
+          "status"
+        ],
+        "properties": {
+          "preference_key": {
+            "type": "string"
+          },
+          "value": {},
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "strength": {
+            "enum": [
+              "MUST",
+              "SHOULD",
+              "MAY"
+            ]
+          },
+          "status": {
+            "const": "BOOTSTRAP_PRIOR"
+          },
+          "support": {
+            "type": "object"
+          },
+          "provenance_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "individual_truth_claimed": {
+      "const": false
+    },
+    "authority_granted": {
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

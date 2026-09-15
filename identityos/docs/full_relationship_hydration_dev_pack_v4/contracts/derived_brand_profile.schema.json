@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/derived_brand_profile.schema.json",
+  "title": "DerivedBrandProfile",
+  "type": "object",
+  "required": [
+    "brand_profile_id",
+    "brand_identity_ref",
+    "version",
+    "persona_archetype_refs",
+    "preference_profile_refs",
+    "relationship_archetype_refs",
+    "provenance"
+  ],
+  "properties": {
+    "brand_profile_id": {
+      "type": "string"
+    },
+    "brand_identity_ref": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "persona_archetype_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preference_profile_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relationship_archetype_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "truth_boundary_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

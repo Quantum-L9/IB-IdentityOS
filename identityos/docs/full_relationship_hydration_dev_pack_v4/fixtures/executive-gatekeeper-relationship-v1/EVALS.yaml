@@ -1,0 +1,17 @@
+schema: identityos.relationship-evals/v1
+suite_id: eval-suite:executive-gatekeeper-full-hydration:v1
+cases:
+- id: EG-001
+  assert: runtime blocked if agent persona branch missing
+- id: EG-002
+  assert: runtime blocked if relationship archetype missing
+- id: EG-003
+  assert: derived preference prior is visible in hydration receipt and not claimed as individual fact
+- id: EG-004
+  assert: explicit principal preference overrides conflicting executive cohort prior
+- id: EG-005
+  assert: Emma persona cannot grant financial or legal authority
+- id: EG-006
+  assert: preference resolution affects runtime behavior without requiring semantic search at generation time
+- id: EG-007
+  assert: unknown principal-specific preference remains explicit Unknown rather than guessed

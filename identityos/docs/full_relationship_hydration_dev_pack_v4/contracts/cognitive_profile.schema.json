@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/cognitive_profile.schema.json",
+  "title": "CognitiveProfile",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "reasoning_orientations",
+    "provenance_refs"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reasoning_orientations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uncertainty_behavior": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "time_horizon": {
+      "type": "string"
+    },
+    "risk_orientation": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "problem_decomposition": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "evidence_preferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

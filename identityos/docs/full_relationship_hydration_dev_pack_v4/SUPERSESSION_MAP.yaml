@@ -1,0 +1,22 @@
+schema: identityos.supersession-map/v4
+current_artifact: identityos_full_relationship_hydration_dev_pack_v4
+supersedes:
+- artifact: identityos_multi_actor_persona_dev_pack_v3
+  status: SUPERSEDED_AND_FOLDED
+  reason: v4 retains persona/multi-actor architecture but elevates full relationship hydration and preference/archetype mirror to the root model.
+- artifact: identityos_multi_actor_persona_dev_pack_v2
+  status: SUPERSEDED
+- artifact: identityos_multi_actor_persona_dev_pack_v1
+  status: SUPERSEDED
+- artifact: identityos_brand_entity_integration_pack_v1
+  status: FOLDED
+  reason: brand identity semantics are converged into technologified brand and relationship derivation.
+donor_evidence:
+- artifact: "Persona\u2019s.zip"
+  status: HARVESTED
+  authority: STRUCTURAL_DONOR_ONLY
+- artifact: historical preference corpus
+  status: HARVESTED
+  authority: SEMANTIC_DONOR_ONLY
+- artifact: PromptOS deprecated preference placeholders
+  status: INTENT_HARVESTED_IMPLEMENTATION_REJECTED

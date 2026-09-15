@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/persona_provenance.schema.json",
+  "title": "PersonaProvenance",
+  "type": "object",
+  "required": [
+    "provenance_id",
+    "representation_mode",
+    "sources"
+  ],
+  "properties": {
+    "provenance_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "representation_mode": {
+      "enum": [
+        "SOURCE_DERIVED",
+        "COMPOSITE_DERIVED",
+        "SYNTHETIC"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_ref",
+          "evidence_state"
+        ],
+        "properties": {
+          "source_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_subject_ref": {
+            "type": "string"
+          },
+          "evidence_state": {
+            "enum": [
+              "DOCUMENTED",
+              "INTERPRETED",
+              "SYNTHETIC",
+              "UNVERIFIED"
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "derivation_method": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "source_endorsement_claimed": {
+      "const": false
+    }
+  },
+  "additionalProperties": false
+}

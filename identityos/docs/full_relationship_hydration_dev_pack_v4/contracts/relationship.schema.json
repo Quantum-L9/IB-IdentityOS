@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/relationship.schema.json",
+  "title": "Actor Relationship",
+  "type": "object",
+  "required": [
+    "relationship_id",
+    "relationship_type",
+    "actor_refs"
+  ],
+  "properties": {
+    "relationship_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "relationship_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "actor_refs": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "valid_from": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "valid_until": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "policy_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

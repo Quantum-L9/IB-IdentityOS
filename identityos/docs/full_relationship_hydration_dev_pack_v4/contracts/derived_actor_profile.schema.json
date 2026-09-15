@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/derived_actor_profile.schema.json",
+  "title": "DerivedActorProfile",
+  "type": "object",
+  "required": [
+    "derivation_id",
+    "subject_kind",
+    "archetype_refs",
+    "relationship_archetype_ref",
+    "projection_type",
+    "projection_ref",
+    "provenance"
+  ],
+  "properties": {
+    "derivation_id": {
+      "type": "string"
+    },
+    "subject_kind": {
+      "enum": [
+        "human",
+        "synthetic_agent",
+        "brand",
+        "organization"
+      ]
+    },
+    "archetype_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relationship_archetype_ref": {
+      "type": "string"
+    },
+    "projection_type": {
+      "enum": [
+        "DerivedPersona",
+        "DerivedPreferenceProfile",
+        "DerivedBrandProfile"
+      ]
+    },
+    "projection_ref": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

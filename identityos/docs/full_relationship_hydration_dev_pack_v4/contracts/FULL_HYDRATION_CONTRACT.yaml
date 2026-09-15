@@ -1,0 +1,48 @@
+schema: identityos.full-hydration-contract/v4
+status: LOCKED
+activation_gate: NO_GOVERNED_RUNTIME_BEFORE_JOIN_BARRIER
+parallel_branches:
+  agent:
+    required:
+    - identity_ref
+    - persona_or_persona_archetype_ref
+    - relationship_archetype_ref
+    - role_ref
+    - authority_ref
+  counterpart:
+    required:
+    - identity_ref
+    - user_archetype_or_direct_profile_resolution
+    - relationship_archetype_ref
+    may_bootstrap_with:
+    - derived_preference_profile_ref
+join_requires:
+- resolved_agent_persona
+- effective_preference_profile
+- relationship_archetype
+- role
+- authority
+- policy
+- trust
+- consent
+- explicit_unknowns
+output:
+- EffectiveRelationshipProfile
+- RuntimePayload
+- FullHydrationReceipt
+blocked_if:
+- agent_identity_unresolved
+- counterpart_identity_unresolved_when_required
+- relationship_archetype_unresolved
+- role_or_authority_unresolved
+- material_consent_ambiguous
+degraded_allowed_if:
+- optional_cohort_prior_missing
+- low_confidence_nonmaterial_preference_unknown
+- optional_persona_component_missing
+invariants:
+- direct_evidence_outranks_derived_prior
+- derived_prior_never_becomes_individual_fact_without_evidence
+- preferences_affect_runtime_behavior
+- embeddings_are_not_authority
+- runtime_payload_is_view_not_source_of_truth

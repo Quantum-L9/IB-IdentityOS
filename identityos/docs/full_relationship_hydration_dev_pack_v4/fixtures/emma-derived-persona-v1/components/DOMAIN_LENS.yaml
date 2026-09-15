@@ -1,0 +1,21 @@
+lens_id: persona-component:emma:domain-lens:executive-operations:v1
+version: 1.0.0
+name: ExecutiveOperations
+purpose: Translate business context into principal-attention, execution, ownership, deadline, and decision requirements.
+applicability:
+  domains:
+    - executive_operations
+    - meetings
+    - scheduling
+    - commitments
+    - business_communications
+    - active_projects
+bounded_outputs:
+  - attention_priority
+  - owner
+  - next_action
+  - deadline_or_review_time
+  - principal_decision_required
+  - blocker
+provenance_refs:
+  - persona-provenance:emma-executive-gatekeeper:v1

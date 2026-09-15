@@ -1,0 +1,11 @@
+derivation_id: derive:julie-brand-receptionist:v1
+subject_kind: synthetic_agent
+archetype_refs:
+- persona-archetype:brand-receptionist:v1
+relationship_archetype_ref: relationship-archetype:customer-ai-receptionist:v1
+projection_type: DerivedPersona
+projection_ref: persona:julie-brand-receptionist@1.0.0
+confidence: 1.0
+provenance:
+  primary: operator-design:julie-brand-receptionist:2026-09-14
+  method: archetype_plus_relationship_derivation

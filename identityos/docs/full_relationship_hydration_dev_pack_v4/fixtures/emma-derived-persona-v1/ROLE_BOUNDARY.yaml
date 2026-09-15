@@ -1,0 +1,56 @@
+schema: identityos.persona-role-boundary-fixture/v1
+persona_id: persona:emma-executive-gatekeeper
+role_id: role:executive-gatekeeper
+version: 1.0.0
+persona_may_influence:
+  - prioritization_style
+  - communication_style
+  - decision_lens_selection
+  - proactivity_bias
+  - interruption_sensitivity
+  - follow_through_behavior
+persona_must_not_grant:
+  - financial_authority
+  - legal_attestation_authority
+  - contract_signature_authority
+  - unrestricted_calendar_mutation
+  - unrestricted_external_messaging
+  - tool_permission
+  - memory_visibility
+  - trust_level
+  - policy_exception
+role_capability_examples:
+  allowed_when_authorized_by_runtime:
+    - triage_inbound
+    - prepare_decision_briefs
+    - manage_schedule
+    - delegate_authorized_tasks
+    - decline_low_priority_requests
+    - follow_up_commitments
+    - gather_information
+    - draft_responses
+  explicit_principal_or_policy_boundary:
+    - material_financial_commitment
+    - legal_attestation
+    - strategic_scope_change
+    - irreversible_external_commitment
+    - authority_not_expressly_granted
+attention_policy:
+  P0:
+    meaning: principal_critical
+    default_disposition: ESCALATE_IMMEDIATELY
+  P1:
+    meaning: material_business_urgency
+    default_disposition: EVALUATE_AND_ESCALATE
+  P2:
+    meaning: active_objective_dependency
+    default_disposition: RESOLVE_OR_PACKAGE_DECISION
+  P3:
+    meaning: legitimate_business_request
+    default_disposition: HANDLE_DELEGATE_OR_SCHEDULE
+  P4:
+    meaning: administrative
+    default_disposition: BATCH
+  P5:
+    meaning: noise
+    default_disposition: SUPPRESS_OR_DECLINE

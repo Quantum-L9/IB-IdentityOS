@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/context_item.schema.json",
+  "title": "Context Item",
+  "type": "object",
+  "required": [
+    "context_id",
+    "provenance_class",
+    "memory_scope",
+    "subject_actor_refs",
+    "source"
+  ],
+  "properties": {
+    "context_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_class": {
+      "enum": [
+        "FACT",
+        "SHARED_ASSERTION",
+        "OBSERVATION",
+        "INFERENCE"
+      ]
+    },
+    "memory_scope": {
+      "enum": [
+        "IDENTITY_CANONICAL",
+        "RELATIONSHIP_SCOPED",
+        "SESSION_SCOPED",
+        "ACTOR_LOCAL"
+      ]
+    },
+    "subject_actor_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "relationship_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "session_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "visibility": {
+      "type": "object",
+      "properties": {
+        "allow_actor_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "deny_actor_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "consent_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "retention": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "payload": {}
+  },
+  "additionalProperties": false
+}

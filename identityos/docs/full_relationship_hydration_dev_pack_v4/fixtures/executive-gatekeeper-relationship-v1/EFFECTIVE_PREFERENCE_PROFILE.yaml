@@ -1,0 +1,42 @@
+profile_id: effective-pref:executive-reference-principal:v1
+subject_identity_ref: identity:executive-reference-principal
+resolved_preferences:
+- preference_key: communication.recommendation_first
+  value: true
+  winning_source_class: DERIVED_PREFERENCE_PROFILE_PRIOR
+  confidence: 0.7
+  source_refs:
+  - derived-pref:executive-ai-gatekeeper:v1
+  overridden_source_refs: []
+- preference_key: attention.batch_low_priority_interruptions
+  value: true
+  winning_source_class: DERIVED_PREFERENCE_PROFILE_PRIOR
+  confidence: 0.7
+  source_refs:
+  - derived-pref:executive-ai-gatekeeper:v1
+  overridden_source_refs: []
+- preference_key: delegation.resolve_when_authorized
+  value: true
+  winning_source_class: DERIVED_PREFERENCE_PROFILE_PRIOR
+  confidence: 0.7
+  source_refs:
+  - derived-pref:executive-ai-gatekeeper:v1
+  overridden_source_refs: []
+- preference_key: decision_support.include_material_tradeoffs
+  value: true
+  winning_source_class: DERIVED_PREFERENCE_PROFILE_PRIOR
+  confidence: 0.65
+  source_refs:
+  - derived-pref:executive-ai-gatekeeper:v1
+  overridden_source_refs: []
+- preference_key: follow_through.close_loops_proactively
+  value: true
+  winning_source_class: DERIVED_PREFERENCE_PROFILE_PRIOR
+  confidence: 0.7
+  source_refs:
+  - derived-pref:executive-ai-gatekeeper:v1
+  overridden_source_refs: []
+resolution_receipt:
+  mode: COLD_START_BOOTSTRAP
+  direct_individual_evidence_count: 0
+  individual_truth_claimed: false

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/preference_evidence.schema.json",
+  "title": "PreferenceEvidence",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "subject_identity_ref",
+    "evidence_type",
+    "scope",
+    "assertion",
+    "confidence",
+    "provenance_ref"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string"
+    },
+    "subject_identity_ref": {
+      "type": "string"
+    },
+    "evidence_type": {
+      "enum": [
+        "EXPLICIT_STATEMENT",
+        "CORRECTION",
+        "REPEATED_BEHAVIOR",
+        "ACCEPTED_SUGGESTION",
+        "REJECTION",
+        "OUTCOME",
+        "RESEARCH",
+        "MODEL_INFERENCE"
+      ]
+    },
+    "scope": {
+      "enum": [
+        "GLOBAL",
+        "RELATIONSHIP",
+        "ROLE",
+        "DOMAIN",
+        "TASK",
+        "SESSION",
+        "COHORT"
+      ]
+    },
+    "assertion": {
+      "type": "object"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "provenance_ref": {
+      "type": "string"
+    },
+    "relationship_ref": {
+      "type": "string"
+    },
+    "observed_at": {
+      "type": "string"
+    },
+    "privacy_class": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

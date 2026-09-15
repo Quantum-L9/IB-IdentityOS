@@ -1,0 +1,518 @@
+{
+  "artifact_id": "identityos_full_relationship_hydration_dev_pack_v4",
+  "version": "4.0.0",
+  "status": "LOCKED_WEAPONIZED_DEV_PACK",
+  "beneficiary": "Quantum-L9/IB-IdentityOS",
+  "mission": "Formalize full relationship hydration, archetype derivation, mirrored persona/preferences, cohort learning, and technologified brand behavior.",
+  "file_count_excluding_manifest_and_hashes": 100,
+  "validation": {
+    "yaml_parse": "PASS",
+    "json_parse": "PASS",
+    "core_schema_fixtures": "PASS",
+    "derived_persona_local_ref_validation": "PASS",
+    "placeholder_scan_v4_surfaces": "PASS",
+    "zip_integrity": "PASS"
+  },
+  "files": [
+    {
+      "path": "ARCHITECTURE_LOCK.yaml",
+      "bytes": 6078,
+      "sha256": "c20801c4b18a4696d662b50ea911cd36df71a34850dcead507d5b08d3c5795b0"
+    },
+    {
+      "path": "AUTHORITY_MAP.yaml",
+      "bytes": 2426,
+      "sha256": "45bedaeb26c2eb36b1ec29924ed7bf115cbbc90049df8862551da675fc6c638f"
+    },
+    {
+      "path": "BUILD_ORDER.md",
+      "bytes": 1304,
+      "sha256": "f570f176dd0352e44784ef7fd08480af25a3bbecae2969dd6560efc0d157e0a5"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 1987,
+      "sha256": "9d2c745eeba307cf79d2da4bd74c477c8fa4290cea1bc3fc8d50a82d73f9209d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4736,
+      "sha256": "47fc0acb74200526299437dce15828ecff8b63b9d9b80cdcf08e831f2a0c50a4"
+    },
+    {
+      "path": "SUPERSESSION_MAP.yaml",
+      "bytes": 987,
+      "sha256": "8d3bfb617815a1408f9b4bccf297337485011b0d737cef9d7e8c3e8d3226b9fa"
+    },
+    {
+      "path": "UNKNOWN_REGISTER.yaml",
+      "bytes": 1224,
+      "sha256": "71194e099be0dc19dbb77378661be9b5cccb5acffba2e006f843056c2fddf468"
+    },
+    {
+      "path": "architecture/ARCHETYPE_DERIVATION_PLANE.md",
+      "bytes": 2081,
+      "sha256": "d12bdaec06cb487bb51a8808f74018c54cec79090313953d3fb5848f06b5a312"
+    },
+    {
+      "path": "architecture/CORE_MODEL.md",
+      "bytes": 2182,
+      "sha256": "941d1fe23043498c0c324138075fc1082a77c1fe2fb815d4dc4c7b9feeda4e2d"
+    },
+    {
+      "path": "architecture/DERIVED_PERSONA.md",
+      "bytes": 2112,
+      "sha256": "d12e9ec9c805fe4deb153890af6d95be674e07205d872f8cfe4dee2049b89369"
+    },
+    {
+      "path": "architecture/DERIVED_PREFERENCE_PROFILE.md",
+      "bytes": 1168,
+      "sha256": "a015f56a2a07cd69039bd197bd85cf756f4db1692331e4997853122e58303b41"
+    },
+    {
+      "path": "architecture/FULL_RELATIONSHIP_HYDRATION.md",
+      "bytes": 2602,
+      "sha256": "1564b7f80dd7ad243ad1861b721b30e25bcbe11a0dc085cae25e4d8f9cf8dbda"
+    },
+    {
+      "path": "architecture/HYDRATION_AND_MEMORY.md",
+      "bytes": 2184,
+      "sha256": "d9895816042b8d9d1a5a14fc01f685d033985f2b5797c65505bfee53deb0c41e"
+    },
+    {
+      "path": "architecture/MULTI_ACTOR_RUNTIME.md",
+      "bytes": 1694,
+      "sha256": "756f46f88d46f0e3e4f010852bd93d69c81689b8e990e5538e08c0f93bac1c28"
+    },
+    {
+      "path": "architecture/PERSONA_COMPILATION.md",
+      "bytes": 731,
+      "sha256": "b0f632b027d43bc3c87ec7d957b091d79b45aef77af7f6e6f79f4404145e0ae0"
+    },
+    {
+      "path": "architecture/PERSONA_COMPOSITION.md",
+      "bytes": 1054,
+      "sha256": "dbc30a89aa822c5a5f011e88fbd248f9c0603a7b7e3af5eb7739195483ed3973"
+    },
+    {
+      "path": "architecture/PERSONA_OWNERSHIP.md",
+      "bytes": 1598,
+      "sha256": "457c90d0a4fff4639e422d71cafc36ab0762da69a48babe6db5812cb1959dd88"
+    },
+    {
+      "path": "architecture/PREFERENCE_LEARNING_AND_COHORTS.md",
+      "bytes": 1102,
+      "sha256": "59139344307a6165a6231a3641a521c8f35bba2b736f91117548bda31e4244c9"
+    },
+    {
+      "path": "architecture/PREFERENCE_MIRROR.md",
+      "bytes": 1983,
+      "sha256": "5c655fb77029cd59513bdc0afd66c627cd16b9e47d8776810743e9470dabd2b2"
+    },
+    {
+      "path": "architecture/RELATIONSHIP_ARCHETYPE.md",
+      "bytes": 1344,
+      "sha256": "2dd6b190eca3ac3a216e77bf54ebd31111840199515750bc7c6975d38ddd9600"
+    },
+    {
+      "path": "architecture/RELATIONSHIP_COMPILATION.md",
+      "bytes": 804,
+      "sha256": "aceab2a8b1d88fb422608ae02e073ff44f2806cc178f1e6e2ea3d64c487112ed"
+    },
+    {
+      "path": "architecture/TECHNOLOGIFIED_BRAND.md",
+      "bytes": 1584,
+      "sha256": "b6bbdf38c554c451dfde531a9d78186a33d89b6d8beb350f9a1ac6450a4f916c"
+    },
+    {
+      "path": "contracts/FULL_HYDRATION_CONTRACT.yaml",
+      "bytes": 1272,
+      "sha256": "b457c637df87421ea00910e8f8785bdcf000bffa1005ef7774b97070a858e41e"
+    },
+    {
+      "path": "contracts/HYDRATION_CONTRACT.yaml",
+      "bytes": 293,
+      "sha256": "82d17ab470d360f69c192a743bb1ede4506cf901edc1f97c87bb05ba36f24d5d"
+    },
+    {
+      "path": "contracts/actor.schema.json",
+      "bytes": 927,
+      "sha256": "02a7bac9c727242b814e3049155a2a366bbab1c95a5a17bf726161962e40c79f"
+    },
+    {
+      "path": "contracts/adaptation_policy.schema.json",
+      "bytes": 981,
+      "sha256": "07a733ffc86a7beb7d6a3dc309b4c93e4affc04cf8f31fa5274e3bc04564ea57"
+    },
+    {
+      "path": "contracts/cognitive_profile.schema.json",
+      "bytes": 1070,
+      "sha256": "88a56cf6fa8bfd2a51b1d8d86d0a96e32ff53a5e634957dc23a6b24260eb305b"
+    },
+    {
+      "path": "contracts/consent_grant.schema.json",
+      "bytes": 1377,
+      "sha256": "2593adf080c9b9a69da725f432b8e3bd6fe9ef58ba72d8021f016d7a48050502"
+    },
+    {
+      "path": "contracts/context_item.schema.json",
+      "bytes": 1826,
+      "sha256": "1269456a8be94ba85336d931ff092d0ae421fce579df60c8c78e8d7e2fdce2dc"
+    },
+    {
+      "path": "contracts/decision_lens.schema.json",
+      "bytes": 1094,
+      "sha256": "a060558e5c28949ff1871c5da0bbbbc52514c161d97f45147dc30b6582076de9"
+    },
+    {
+      "path": "contracts/derived_actor_profile.schema.json",
+      "bytes": 1131,
+      "sha256": "cf66e357fa2b85ea4258e2d747eebdabf39f9985545640d89b15a2fd05809f98"
+    },
+    {
+      "path": "contracts/derived_brand_profile.schema.json",
+      "bytes": 1110,
+      "sha256": "66a81ed49875644d5e0fe70cdc95b9c74016ac104f5ac14231ad8cbfd51f1a5f"
+    },
+    {
+      "path": "contracts/derived_persona.schema.json",
+      "bytes": 1786,
+      "sha256": "52ff5def9ce4613b207380aa3b4d087b9d466cdd7ba9e4b7881788ddfa94fa03"
+    },
+    {
+      "path": "contracts/derived_preference_profile.schema.json",
+      "bytes": 1932,
+      "sha256": "648e382b174b695db410fe6db7829afa8c6e18dacc3baa8b5139681b95266308"
+    },
+    {
+      "path": "contracts/domain_lens.schema.json",
+      "bytes": 753,
+      "sha256": "e96ead0cb735cd0126ddc465f45308a51893b8935ab3a6b94de2e1114389cf1c"
+    },
+    {
+      "path": "contracts/effective_preference_profile.schema.json",
+      "bytes": 1448,
+      "sha256": "698e50b12fdbd66f0e586defb4c5639bfb031c4ec45bcf17a276f4db77bca66a"
+    },
+    {
+      "path": "contracts/effective_relationship_profile.schema.json",
+      "bytes": 1291,
+      "sha256": "19fd3072356465e8faf0d3f82f30ac319063bdbcfa36efe205280e36eaf5f129"
+    },
+    {
+      "path": "contracts/full_hydration_receipt.schema.json",
+      "bytes": 1088,
+      "sha256": "bf595921c387cf30b80c69a005198110fd0ebc0e8bcb96d6b633552cdc789397"
+    },
+    {
+      "path": "contracts/interaction_profile.schema.json",
+      "bytes": 1118,
+      "sha256": "85071c43529a6542e7d1b1e0438d43e9419b1af3d01209d4953313c5ef16976d"
+    },
+    {
+      "path": "contracts/persona.schema.json",
+      "bytes": 2542,
+      "sha256": "cda6a1e01b6f81e149af6bdcb7d6fb293be05ebcc1a7c274dda2a9f7ef8d8b2d"
+    },
+    {
+      "path": "contracts/persona_archetype.schema.json",
+      "bytes": 845,
+      "sha256": "d55f704843bee4ae06d0751b256d3ce8c32e914c8826ff637c9ad7ef59b9cf9e"
+    },
+    {
+      "path": "contracts/persona_provenance.schema.json",
+      "bytes": 1508,
+      "sha256": "72c7b5ef4fe3dd0baa61f7180b7f11c13e5269b9ffa24b4ae2bc8201e5c500a7"
+    },
+    {
+      "path": "contracts/preference_evidence.schema.json",
+      "bytes": 1294,
+      "sha256": "88d3c79248957210ece50ab61747722a38583204b88205ebb0d2da02827d9020"
+    },
+    {
+      "path": "contracts/preference_profile.schema.json",
+      "bytes": 1965,
+      "sha256": "c72f3624a1a599b0aa7993b24408600495ae690003734120ff53dd39ffba27d2"
+    },
+    {
+      "path": "contracts/presentation_profile.schema.json",
+      "bytes": 986,
+      "sha256": "07508d29079bed024d665f52b8301af645118e20a2586ad45ed9817da3c63291"
+    },
+    {
+      "path": "contracts/principle_set.schema.json",
+      "bytes": 571,
+      "sha256": "96ebb1311d223fd9546e6736290fb54a88a5182ff69d9e04d58aedcee495e1b2"
+    },
+    {
+      "path": "contracts/relationship.schema.json",
+      "bytes": 957,
+      "sha256": "7c9d10778836b96c12ab86c34f179fed060bf2faacec48581e8ff6efb9f094fd"
+    },
+    {
+      "path": "contracts/relationship_archetype.schema.json",
+      "bytes": 1284,
+      "sha256": "c67dd0f02e7a927237865630c05949110ee531b8e534ba38372369691b077ae8"
+    },
+    {
+      "path": "contracts/runtime_context_v2.schema.json",
+      "bytes": 1346,
+      "sha256": "2ba17f1d28c96fd642eee4aa30bbd3167d3985034ed32b82ae4cc1f9736596fa"
+    },
+    {
+      "path": "contracts/user_archetype.schema.json",
+      "bytes": 936,
+      "sha256": "e29b267df7fa517083582aebbf46b3d7ae68185f54ed270f4ffa277a7e2d3489"
+    },
+    {
+      "path": "failure_modes/LCTO_COLD_AGENT_FAILURE.md",
+      "bytes": 1124,
+      "sha256": "c634903392fa642a8e25574ec67519d7e1bb4e24634a1d757e628bfcab111a4b"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/DECISION_LENSES.yaml",
+      "bytes": 2415,
+      "sha256": "278f946f6ebd96de143a859f29df3cefa56cfa6a84c8320ebe01001f96e379d4"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/EVAL_PROFILE.yaml",
+      "bytes": 2631,
+      "sha256": "9fc90ed95256df931b166f583e02650dc9e8f984a78a778a1fd17a72fe96717d"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/Emma-derived-persona.V1.yaml",
+      "bytes": 2934,
+      "sha256": "6ec193e8fb6815895551f257a2e438db88ed0a3ceea5948961e4a4c81f3375fc"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/PROVENANCE.yaml",
+      "bytes": 1338,
+      "sha256": "8b906e5ea45eb15ea4241a03444d4544af080e4924dfd363b059f7c36610f8f8"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/README.md",
+      "bytes": 1219,
+      "sha256": "4db4aaffa0c949587b28f766da55da20e24683d365420b62a55fdc7374bffa46"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/ROLE_BOUNDARY.yaml",
+      "bytes": 1605,
+      "sha256": "15ebd12d13eb578762a21d73a220b7953e26ea330e29a1582c1f49a922b229ce"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/RUNTIME_FIXTURES.yaml",
+      "bytes": 1877,
+      "sha256": "8476e2c46e54771bbac2e4595f7c6257f264849c12f6e72022b7bb4834d55be8"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/components/ADAPTATION_POLICY.yaml",
+      "bytes": 996,
+      "sha256": "151ad9cab4c424bc694c1dfc8ce2c8daa3272eea63a32da75103f6023d524b5e"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/components/ADVANCE_OBJECTIVE_LENS.yaml",
+      "bytes": 704,
+      "sha256": "ac3e1602683f53ab31cdb1743b7c11f6cae4e4df4920937da09825144425fc7e"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/components/CLOSE_LOOP_LENS.yaml",
+      "bytes": 741,
+      "sha256": "c4c459dbeee1891c5c6c97e4e0643958494a9a23c5aa58e2e81639b60eda6437"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/components/COGNITIVE_PROFILE.yaml",
+      "bytes": 873,
+      "sha256": "ef9dac5551262b1aaee28055d6b29ea62fd273cc1cd9fdb6221a9ce68d16ae58"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/components/DOMAIN_LENS.yaml",
+      "bytes": 592,
+      "sha256": "521ad16b35adfc485897e76ea84f7ff0ae608944a2309d733ec879c0a057b6f0"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/components/INTERACTION_PROFILE.yaml",
+      "bytes": 979,
+      "sha256": "284a428c265ff13fc2c3d40b8cca45d6645e690e2ea54889e2fa9e3b15affb43"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/components/PRESENTATION_PROFILE.yaml",
+      "bytes": 804,
+      "sha256": "d1f3f2d67fc3f2a6db8d5c7fb6e05648a41e797e360f20a60bd4c36ef75c79de"
+    },
+    {
+      "path": "fixtures/emma-derived-persona-v1/components/PROTECT_PRINCIPAL_LENS.yaml",
+      "bytes": 814,
+      "sha256": "958c85ced09c4022d83ce6ef3975606a11304ef371e23bc75f1642a74bddd58e"
+    },
+    {
+      "path": "fixtures/executive-gatekeeper-relationship-v1/DERIVED_PREFERENCE_PROFILE.yaml",
+      "bytes": 1758,
+      "sha256": "e1d9796f41535b1fadcd42eef17d98f17b427c4cce0e54943726ff09001ad813"
+    },
+    {
+      "path": "fixtures/executive-gatekeeper-relationship-v1/EFFECTIVE_PREFERENCE_PROFILE.yaml",
+      "bytes": 1436,
+      "sha256": "18cd965faae94aa7804ba2a79b784f8e134363986b26c7fa635981d0bd08efa5"
+    },
+    {
+      "path": "fixtures/executive-gatekeeper-relationship-v1/EFFECTIVE_RELATIONSHIP_PROFILE.yaml",
+      "bytes": 795,
+      "sha256": "04c84618e30f170082f9b32ee4b9614dcde018937feea3185ff00ceaff98813b"
+    },
+    {
+      "path": "fixtures/executive-gatekeeper-relationship-v1/EMMA_DERIVATION_RECEIPT.yaml",
+      "bytes": 446,
+      "sha256": "131c33a269831c34f67137c54c56bbece2c15f4481c5eeb0a52c424dc26f7d70"
+    },
+    {
+      "path": "fixtures/executive-gatekeeper-relationship-v1/EMMA_PERSONA_ARCHETYPE.yaml",
+      "bytes": 537,
+      "sha256": "82cc6f4d435c391fd184cb0a40073c7d0f4acc1dd272adbe51b93e63e0a0a07a"
+    },
+    {
+      "path": "fixtures/executive-gatekeeper-relationship-v1/EVALS.yaml",
+      "bytes": 772,
+      "sha256": "93b5cf6d17020751c16b858bad524e949ca15aff166c57e7861414ea65056640"
+    },
+    {
+      "path": "fixtures/executive-gatekeeper-relationship-v1/EXECUTIVE_USER_ARCHETYPE.yaml",
+      "bytes": 627,
+      "sha256": "a67adbae1fe9f6e18bafc077d61d63ccbf273b11ad6f684b929ec71027330adf"
+    },
+    {
+      "path": "fixtures/executive-gatekeeper-relationship-v1/FULL_HYDRATION_RECEIPT.yaml",
+      "bytes": 817,
+      "sha256": "787b963b5a548736075aa028ccf550e65c5fab7c92d8cc3117b12b9332c25e1b"
+    },
+    {
+      "path": "fixtures/executive-gatekeeper-relationship-v1/PREFERENCE_OVERRIDE_FIXTURE.yaml",
+      "bytes": 613,
+      "sha256": "0e493e2fcb7c699f29430df7088ad556cf2970610a2f89850246bc6cac21335e"
+    },
+    {
+      "path": "fixtures/executive-gatekeeper-relationship-v1/README.md",
+      "bytes": 634,
+      "sha256": "5808553c4a954e32f815067a874b03494326de7009ad228753c2c7fbfacadbdc"
+    },
+    {
+      "path": "fixtures/executive-gatekeeper-relationship-v1/RELATIONSHIP_ARCHETYPE.yaml",
+      "bytes": 1335,
+      "sha256": "0a90e9a26ae47126a1e37151217affcfd68d6ed35c75906eff22c501ddad14f2"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/CUSTOMER_USER_ARCHETYPE.yaml",
+      "bytes": 585,
+      "sha256": "068019c24300d6c5252297b932440e690dada753c279eb831991c9fdc78e7e53"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/DERIVED_PREFERENCE_PROFILE.yaml",
+      "bytes": 1087,
+      "sha256": "3fd454ecfec7b6ccf818f5e2a1d5ea5ac5795e24d0c6943f797e07f008a5c5b5"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/EVALS.yaml",
+      "bytes": 568,
+      "sha256": "8555a12e0e5f7c4dc266deac5c52a7e2e5766a2af80f5ebc80d3821758462798"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/JULIE_DERIVATION_RECEIPT.yaml",
+      "bytes": 444,
+      "sha256": "08d1773db5d4b1c4bedccae124139ebb3e83d6a29d2f050bf60eebe000185dff"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/JULIE_DERIVED_PERSONA.yaml",
+      "bytes": 1633,
+      "sha256": "22479f5905cdcaf47546fdd430d4018db1ef212b2e5e274e9e9b3e7c3214e827"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/JULIE_PERSONA_ARCHETYPE.yaml",
+      "bytes": 537,
+      "sha256": "2c116b104c9ca91f80b082b2da3e30bfdfc538792f9ced4b17de7997490a7625"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/README.md",
+      "bytes": 428,
+      "sha256": "2ad755271db6afa4c2f780ea877dbe56a6fb3b699cfd9cd510816b51cf961ffe"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/RELATIONSHIP_ARCHETYPE.yaml",
+      "bytes": 1082,
+      "sha256": "c4cc15310ea2195034c3bcfe0a83c4d016a2b1b8672688386ee362787342eef2"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/TECHNOLOGIFIED_BRAND_FIXTURE.yaml",
+      "bytes": 718,
+      "sha256": "b696b6bbf5afdc7d0b023f5db5867a758fe16255dd12f353be932d791f001019"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/components/ADAPTATION_POLICY.yaml",
+      "bytes": 613,
+      "sha256": "cdeb60e98b4e1f188241c0b48f74467a68f1c67d9576e1aa997b8d2f259c49c2"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/components/COGNITIVE_PROFILE.yaml",
+      "bytes": 736,
+      "sha256": "ab3ad1b78b5ce12686814bbc61d1e8c12c501f49ec85890ab867fff363f6a7fa"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/components/INTERACTION_PROFILE.yaml",
+      "bytes": 561,
+      "sha256": "637d615bd772546b2d1eaf0bc1d25d60f3ace329f51366585687a6d88717cef2"
+    },
+    {
+      "path": "fixtures/julie-brand-receptionist-v1/components/PRESENTATION_PROFILE.yaml",
+      "bytes": 505,
+      "sha256": "48397e440c236ba113377ab02e5141884e8cbd06b8e5a7be6793e2d3ad12b71e"
+    },
+    {
+      "path": "harvest/PERSONA_CORPUS_HARVEST.md",
+      "bytes": 1740,
+      "sha256": "0deb7cd1c9ce95b119c9924dde1519bb4b626c2ba928f7618dfc33508bb721d6"
+    },
+    {
+      "path": "harvest/PREFERENCE_CORPUS_HARVEST.md",
+      "bytes": 2731,
+      "sha256": "6e62ddee75209c751652a2b2da624081593643c13abb30c0e632b8e5cdc7fe65"
+    },
+    {
+      "path": "integration/BRAND_ENTITY_REALIGNMENT.md",
+      "bytes": 901,
+      "sha256": "2f1ec0cf23c03d909f1a39603f3c799af22ed1fc94004f6176b2d9a1f4352d09"
+    },
+    {
+      "path": "integration/IDENTITYOS_PATCH_PLAN.md",
+      "bytes": 3558,
+      "sha256": "988f5ba5f73ddd96c7cce4a29a43de31d9396a3b10b258ebd6de5f0ec5ffa378"
+    },
+    {
+      "path": "integration/MEMORY_INTEGRATION.md",
+      "bytes": 1076,
+      "sha256": "20ce2c18c7800d1148c2a7f33557b9a557cde9f1c6be9ada5c468f06070b050c"
+    },
+    {
+      "path": "integration/PREFERENCE_KERNEL_MIGRATION.md",
+      "bytes": 691,
+      "sha256": "ef691e183800329589bbc378fe1a27929ba60e4a9c81810e7b2a105b6afbe742"
+    },
+    {
+      "path": "validation/ACCEPTANCE_GATES.yaml",
+      "bytes": 1891,
+      "sha256": "e6737de568efa11b81e8c66274cd1e506607aa22d1be5fbebb9e6f7ddf3316fb"
+    },
+    {
+      "path": "validation/DERIVATION_EVALS.yaml",
+      "bytes": 539,
+      "sha256": "9f151c4e94e48f318bdb91aed35f32e2f2f337c60231f9b0796a1f1f5415fdba"
+    },
+    {
+      "path": "validation/PERSONA_EVALS.yaml",
+      "bytes": 1125,
+      "sha256": "d34ab22163f71e716ddb3550f2515bf354b282150b77be4a3e0747bfff5c3ccb"
+    },
+    {
+      "path": "validation/REGRESSION_MATRIX.yaml",
+      "bytes": 1859,
+      "sha256": "fbe6cc1c4c0ad5f747d1cfd1758eecb125dba7407395e78e36bb42d3c5308000"
+    }
+  ]
+}

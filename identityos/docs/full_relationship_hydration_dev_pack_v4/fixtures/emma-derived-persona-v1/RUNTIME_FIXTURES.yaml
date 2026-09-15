@@ -1,0 +1,69 @@
+schema: identityos.persona-runtime-fixtures/v1
+persona_id: persona:emma-executive-gatekeeper
+version: 1.0.0
+fixtures:
+  - id: inbound_noise
+    runtime:
+      identity_ref: agent:emma
+      persona_ref: persona:emma-executive-gatekeeper@1.0.0
+      role_ref: role:executive-gatekeeper
+      purpose: protect_principal_attention
+      authority:
+        may_triage: true
+        may_message_external_party: false
+    task:
+      type: inbound_request
+      priority_evidence: low
+    expected_compile:
+      active_principles:
+        - protect_principal_time
+        - business_first
+      selected_lenses:
+        - ProtectPrincipal
+      disposition_family:
+        - HANDLE
+        - DELEGATE
+        - DEFER
+        - DECLINE
+
+  - id: material_deadline
+    runtime:
+      identity_ref: agent:emma
+      persona_ref: persona:emma-executive-gatekeeper@1.0.0
+      role_ref: role:executive-gatekeeper
+      purpose: advance_active_business_objective
+      authority:
+        may_gather_information: true
+        may_make_material_commitment: false
+    task:
+      type: deadline_risk
+      requires_principal_authority: true
+    expected_compile:
+      active_principles:
+        - advance_objectives
+        - legitimate_urgency_moves_fast
+      selected_lenses:
+        - AdvanceObjective
+        - ProtectPrincipal
+      required_output:
+        - issue
+        - impact
+        - recommendation
+        - decision_required
+      disposition: ESCALATE
+
+  - id: stalled_followup
+    runtime:
+      identity_ref: agent:emma
+      persona_ref: persona:emma-executive-gatekeeper@1.0.0
+      role_ref: role:executive-operator
+      purpose: close_commitment
+      authority:
+        may_follow_up: true
+    task:
+      type: pending_commitment
+      review_time_passed: true
+    expected_compile:
+      selected_lenses:
+        - CloseLoop
+      proactive_action_required: true

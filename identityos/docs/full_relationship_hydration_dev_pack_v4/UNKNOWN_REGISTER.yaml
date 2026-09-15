@@ -1,0 +1,32 @@
+schema: identityos.unknown-register/v4
+status: OPEN_BUT_BOUNDED
+unknowns:
+- id: U4-001
+  topic: exact current IdentityOS module paths for archetype and preference persistence
+  disposition: VERIFY_CURRENT_MAIN_BEFORE_IMPLEMENTATION
+  blocks: implementation only
+- id: U4-002
+  topic: measured cold-start coverage by target market
+  disposition: MEASURE
+  note: 50-80% remains hypothesis.
+- id: U4-003
+  topic: minimum cohort size and promotion thresholds
+  disposition: CALIBRATE_FROM_EVIDENCE
+  blocks: automatic cohort promotion only
+- id: U4-004
+  topic: privacy mechanism for cross-tenant cohort aggregation
+  disposition: REQUIRE_SECURITY_PRIVACY_DESIGN
+  blocks: production cross-customer cohort learning
+- id: U4-005
+  topic: whether DerivedActorProfile persists or remains derivation receipt/envelope only
+  disposition: BOUND_WITH_INTERFACE
+  note: specialized projections remain canonical regardless.
+- id: U4-006
+  topic: exact brand evidence ingestion adapters
+  disposition: DEFER_TO_ADAPTER_LAYER
+- id: U4-007
+  topic: cross-tenant relationship federation
+  disposition: DEFER_OUTSIDE_SLICE
+- id: U4-008
+  topic: public distribution rights for named public-figure-derived personas
+  disposition: BLOCK_SURFACE

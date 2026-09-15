@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/full_hydration_receipt.schema.json",
+  "title": "FullHydrationReceipt",
+  "type": "object",
+  "required": [
+    "receipt_id",
+    "actor_refs",
+    "relationship_archetype_ref",
+    "agent_branch",
+    "counterpart_branch",
+    "join",
+    "unknowns",
+    "status"
+  ],
+  "properties": {
+    "receipt_id": {
+      "type": "string"
+    },
+    "actor_refs": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "relationship_archetype_ref": {
+      "type": "string"
+    },
+    "agent_branch": {
+      "type": "object"
+    },
+    "counterpart_branch": {
+      "type": "object"
+    },
+    "join": {
+      "type": "object"
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "FULLY_HYDRATED",
+        "DEGRADED_ALLOWED",
+        "BLOCKED"
+      ]
+    },
+    "compiled_at": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

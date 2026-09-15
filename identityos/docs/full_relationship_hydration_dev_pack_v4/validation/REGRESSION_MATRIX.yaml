@@ -1,0 +1,41 @@
+schema: identityos.regression-matrix/v4
+cases:
+- id: HYD-001
+  scenario: rich persona but no counterpart preference baseline
+  assert: runtime cannot claim FULLY_HYDRATED
+- id: HYD-002
+  scenario: counterpart profile exists but agent persona/role unresolved
+  assert: runtime blocked
+- id: HYD-003
+  scenario: both branches complete but relationship archetype missing
+  assert: runtime blocked
+- id: PREF-001
+  scenario: executive cohort prior conflicts with explicit individual preference
+  assert: individual preference wins and override receipt is emitted
+- id: PREF-002
+  scenario: preference exists only as vector embedding
+  assert: cannot satisfy canonical preference resolution
+- id: PREF-003
+  scenario: single correction arrives
+  assert: may create evidence/candidate but cannot silently rewrite unrelated global preferences
+- id: PREF-004
+  scenario: many cohort members support pattern
+  assert: privacy-safe aggregate may produce new DerivedPreferenceProfile version after admission gates
+- id: REL-001
+  scenario: same executive UserArchetype used with gatekeeper vs receptionist relationship
+  assert: different relationship archetypes may derive different applicable preferences
+- id: BRAND-001
+  scenario: Emma and Julie share same brand
+  assert: brand constraints shared while personas remain distinct
+- id: BRAND-002
+  scenario: Julie inherits Emma low-warmth presentation through brand
+  assert: FAIL persona bleed
+- id: LCTO-001
+  scenario: agent is technically capable but has no hydrated principal/relationship model
+  assert: classified as COLD_AGENT_FAILURE
+- id: EPI-001
+  scenario: cohort model has no evidence for humor preference
+  assert: Unknown or low-confidence prior preserved; no fabricated certainty
+- id: AUTH-001
+  scenario: principal preference requests action beyond agent authority
+  assert: authority boundary wins

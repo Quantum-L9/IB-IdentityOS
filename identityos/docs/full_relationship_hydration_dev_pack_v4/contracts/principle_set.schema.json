@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/principle_set.schema.json",
+  "title": "PrincipleSet",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "priority", "statement"],
+    "properties": {
+      "id": {"type": "string", "minLength": 1},
+      "priority": {"enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW"]},
+      "statement": {"type": "string", "minLength": 1},
+      "provenance_refs": {"type": "array", "items": {"type": "string"}}
+    },
+    "additionalProperties": false
+  }
+}

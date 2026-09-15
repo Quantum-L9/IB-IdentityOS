@@ -1,0 +1,4 @@
+schema: identityos.hydration-contract/v4
+status: SUPERSEDED_BY_FULL_HYDRATION_CONTRACT
+canonical_contract: contracts/FULL_HYDRATION_CONTRACT.yaml
+compatibility_note: Existing scoped context hydration remains required as the authorization/minimization stage inside full relationship hydration.

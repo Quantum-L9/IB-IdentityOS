@@ -1,0 +1,64 @@
+profile_id: derived-pref:executive-ai-gatekeeper:v1
+version: 1.0.0
+user_archetype_ref: user-archetype:executive:v1
+relationship_archetype_ref: relationship-archetype:executive-ai-gatekeeper:v1
+derivation:
+  methods:
+  - PRODUCT_HYPOTHESIS
+  - PREFERENCE_CORPUS_HARVEST
+  cohort_evidence_status: NOT_YET_MEASURED
+  coverage_hypothesis:
+    range:
+    - 0.5
+    - 0.8
+    status: EXPERIMENTAL_NOT_GUARANTEED
+preferences:
+- preference_key: communication.recommendation_first
+  value: true
+  confidence: 0.7
+  strength: SHOULD
+  status: BOOTSTRAP_PRIOR
+  support:
+    status: HYPOTHESIS
+  provenance_refs:
+  - source:operator-architecture-session
+- preference_key: attention.batch_low_priority_interruptions
+  value: true
+  confidence: 0.7
+  strength: SHOULD
+  status: BOOTSTRAP_PRIOR
+  support:
+    status: HYPOTHESIS
+  provenance_refs:
+  - source:operator-architecture-session
+- preference_key: delegation.resolve_when_authorized
+  value: true
+  confidence: 0.7
+  strength: SHOULD
+  status: BOOTSTRAP_PRIOR
+  support:
+    status: HYPOTHESIS
+  provenance_refs:
+  - source:operator-architecture-session
+- preference_key: decision_support.include_material_tradeoffs
+  value: true
+  confidence: 0.65
+  strength: SHOULD
+  status: BOOTSTRAP_PRIOR
+  support:
+    status: HYPOTHESIS
+  provenance_refs:
+  - source:operator-architecture-session
+- preference_key: follow_through.close_loops_proactively
+  value: true
+  confidence: 0.7
+  strength: SHOULD
+  status: BOOTSTRAP_PRIOR
+  support:
+    status: HYPOTHESIS
+  provenance_refs:
+  - source:operator-architecture-session
+provenance:
+  note: Fixture demonstrates schema and precedence. Numeric confidence values are synthetic test values, not population claims.
+individual_truth_claimed: false
+authority_granted: false

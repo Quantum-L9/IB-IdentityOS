@@ -1,0 +1,20 @@
+relationship_profile_id: effective-relationship:emma-executive-reference:v1
+actor_refs:
+- agent:emma
+- identity:executive-reference-principal
+relationship_archetype_ref: relationship-archetype:executive-ai-gatekeeper:v1
+agent_persona_ref: persona:emma-executive-gatekeeper@1.0.0
+counterpart_preference_profile_ref: effective-pref:executive-reference-principal:v1
+role_ref: role:executive-gatekeeper
+authority_ref: authority:fixture:bounded-executive-gatekeeper
+behavioral_contract:
+  protect_attention: true
+  prepare_decisions: true
+  close_loops: true
+  direct_evidence_may_override_cohort_prior: true
+unknowns:
+- principal_specific_interruption_threshold
+- principal_specific_briefing_depth
+provenance_refs:
+- persona:emma-executive-gatekeeper@1.0.0
+- derived-pref:executive-ai-gatekeeper:v1

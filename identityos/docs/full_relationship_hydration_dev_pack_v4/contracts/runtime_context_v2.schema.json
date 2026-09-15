@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://identityos.dev/schemas/runtime_context_v2.schema.json",
+  "title": "Runtime Context v2",
+  "type": "object",
+  "required": [
+    "runtime_id",
+    "actors",
+    "substrate",
+    "purpose"
+  ],
+  "properties": {
+    "runtime_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "actors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "relationship_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "substrate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "allowed_scopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "session_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "requesting_actor_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target_actor_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "policy_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "trust_context": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

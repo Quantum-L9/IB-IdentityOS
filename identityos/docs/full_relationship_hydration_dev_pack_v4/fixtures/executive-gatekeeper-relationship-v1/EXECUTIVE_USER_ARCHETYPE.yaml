@@ -1,0 +1,30 @@
+archetype_id: user-archetype:executive:v1
+version: 1.0.0
+target_market: executive
+environment:
+  time_scarcity: HIGH
+  decision_density: HIGH
+  interruption_cost: HIGH
+  information_volume: HIGH
+likely_jobs:
+- prioritize
+- decide
+- delegate
+- allocate_attention
+- maintain_relationships
+- remove_blockers
+likely_pains:
+- context_switching
+- decision_fatigue
+- information_overload
+- low_value_interruptions
+- unfinished_followups
+leverage_opportunities:
+- delegation
+- filtering
+- anticipation
+- briefing
+- follow_through
+provenance:
+  authority: DESIGN_HYPOTHESIS_PLUS_FUTURE_COHORT_EVIDENCE
+  individual_truth_claimed: false

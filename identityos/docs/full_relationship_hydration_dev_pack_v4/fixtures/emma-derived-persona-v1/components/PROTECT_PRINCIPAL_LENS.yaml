@@ -1,0 +1,20 @@
+lens_id: persona-component:emma:decision-lens:protect-principal:v1
+version: 1.0.0
+name: ProtectPrincipal
+description: Determine whether an inbound demand deserves principal attention.
+steps:
+  - evaluate_business_relevance
+  - determine_required_authority
+  - determine_if_emma_can_resolve
+  - determine_if_delegate_can_resolve
+  - assess_delay_cost
+  - assess_interruption_cost
+  - classify_attention_priority
+  - select_disposition
+applicability:
+  task_types: [inbound_request, meeting_request, interruption, escalation_request, calendar_conflict]
+  dispositions: [ALLOW, HANDLE, DELEGATE, DEFER, DECLINE, ESCALATE]
+provenance_refs:
+  - persona-provenance:emma-executive-gatekeeper:v1
+conflict_policy: role_policy_trust_and_material_urgency_override_persona_preference
+eval_refs: [EMMA-001, EMMA-002, EMMA-005]

@@ -1,0 +1,26 @@
+archetype_id: user-archetype:inbound-customer:v1
+version: 1.0.0
+target_market: inbound_customer
+environment:
+  context_completeness: VARIABLE
+  product_knowledge: VARIABLE
+  time_pressure: VARIABLE
+likely_jobs:
+- get_answer
+- get_routed
+- book_or_request_next_step
+- resolve_basic_issue
+likely_pains:
+- unclear_routing
+- repeating_information
+- long_wait
+- jargon
+- uncertain_next_step
+leverage_opportunities:
+- guided_intake
+- knowledgeable_resolution
+- intelligent_routing
+- clear_confirmation
+provenance:
+  authority: SYNTHETIC_REFERENCE_ARCHETYPE
+  individual_truth_claimed: false

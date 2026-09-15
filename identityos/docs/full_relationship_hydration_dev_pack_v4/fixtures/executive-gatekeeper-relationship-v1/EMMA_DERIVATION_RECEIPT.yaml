@@ -1,0 +1,11 @@
+derivation_id: derive:emma-executive-gatekeeper:v1
+subject_kind: synthetic_agent
+archetype_refs:
+- persona-archetype:executive-operator:v1
+relationship_archetype_ref: relationship-archetype:executive-ai-gatekeeper:v1
+projection_type: DerivedPersona
+projection_ref: persona:emma-executive-gatekeeper@1.0.0
+confidence: 1.0
+provenance:
+  primary: operator-design:emma-executive-gatekeeper:2026-09-14
+  method: archetype_plus_relationship_derivation
